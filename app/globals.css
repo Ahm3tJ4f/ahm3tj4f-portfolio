@@ -57,10 +57,20 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-teal: var(--brand-teal);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-brown: var(--brand-brown);
 }
 
 :root {
   --radius: 0.625rem;
+  --brand-navy: #001524;
+  --brand-teal: #15616d;
+  --brand-cream: #ffecd1;
+  --brand-orange: #ff7d00;
+  --brand-brown: #78290f;
   --background: oklch(0.9794 0.0074 76.75);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -76,7 +86,7 @@
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
+  --border: oklch(0.85 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
@@ -134,5 +144,75 @@
   }
   body {
     @apply bg-background text-foreground;
+    line-height: 1.8;
+    background-image: radial-gradient(var(--border) 1px, transparent 1px);
+    background-size: 24px 24px;
   }
+  ::selection {
+    @apply bg-brand-teal text-white;
+  }
+}
+
+@layer base {
+  * {
+    @apply text-brand-navy;
+  }
+}
+
+h1.halftone-accent {
+  --dot-size: 6px;
+  --dot-gap: 10px;
+  --left-width: 60px;
+  --bottom-height: 50px;
+  --bottom-width: 34%;
+}
+
+h2.halftone-accent {
+  --dot-size: 4px;
+  --dot-gap: 6px;
+  --left-width: 24px;
+  --bottom-height: 19px;
+  --bottom-width: 39%;
+}
+
+h3.halftone-accent {
+  --dot-size: 3px;
+  --dot-gap: 5px;
+  --left-width: 18px;
+  --bottom-height: 14px;
+  --bottom-width: 25%;
+}
+
+.halftone-accent {
+  position: relative;
+  padding-left: calc(var(--left-width, 60px) * 1.25);
+  padding-bottom: calc(var(--bottom-height, 50px) * 1.15);
+}
+
+.halftone-accent::before,
+.halftone-accent::after {
+  content: "";
+  position: absolute;
+  background-image: radial-gradient(
+    circle,
+    var(--dot-color, var(--brand-orange)) calc(var(--dot-size, 8px) / 2),
+    transparent calc(var(--dot-size, 8px) / 2)
+  );
+  background-size: var(--dot-gap, 10px) var(--dot-gap, 10px);
+}
+
+/* Left vertical column of dots */
+.halftone-accent::before {
+  left: 0;
+  top: 0;
+  bottom: var(--bottom-height, 50px);
+  width: var(--left-width, 60px);
+}
+
+/* Bottom horizontal row of dots */
+.halftone-accent::after {
+  left: 0;
+  bottom: 0;
+  height: var(--bottom-height, 50px);
+  width: var(--bottom-width, 35%);
 }
