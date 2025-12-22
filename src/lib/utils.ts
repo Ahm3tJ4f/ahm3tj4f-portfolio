@@ -1,4 +1,4 @@
-import { clsx, type ClassValue } from "clsx";
+import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
@@ -30,7 +30,6 @@ export const logDontHackMe = () => {
   );
 };
 
-// Simple fingerprint generation
 export const getDeviceFingerprint = (): number => {
   if (typeof window === "undefined") return 0;
 
@@ -52,33 +51,12 @@ export const getDeviceFingerprint = (): number => {
     timezone,
   ].join("");
 
-  // Simple string hash
   let hash = 0;
   for (let i = 0; i < fingerprint.length; i++) {
     const char = fingerprint.charCodeAt(i);
     hash = (hash << 5) - hash + char;
-    hash = hash & hash; // Convert to 32bit integer
+    hash = hash & hash;
   }
 
   return Math.abs(hash);
 };
-
-// Seeded Random Generator
-export class SeededRandom {
-  private seed: number;
-
-  constructor(seed: number) {
-    this.seed = seed;
-  }
-
-  // Returns number between 0 and 1
-  next(): number {
-    const x = Math.sin(this.seed++) * 10000;
-    return x - Math.floor(x);
-  }
-
-  // Returns number between min and max
-  range(min: number, max: number): number {
-    return min + this.next() * (max - min);
-  }
-}

@@ -1,11 +1,17 @@
 export const ExternalLinks = {
   FerrumCapital: "https://www.ferrumcapital.az/az",
+  FerrumCapitalCustomerApp:
+    "https://apps.apple.com/az/app/ferrum-capital/id6741802393",
+  FerrumCapitalBusinessApp:
+    "https://apps.apple.com/az/app/ferrum-capital-business/id6739120261",
   ThreeBlueOneBrown: "https://www.3blue1brown.com/",
   TikTokGuitar: "https://www.tiktok.com/@ahm3tj4f/video/7519449555486690568",
   Goodreads: "https://www.goodreads.com/user/show/63307480-ahmad-jafarov",
   "4You": "https://4youcare.com/",
   InnoSight: "https://www.linkedin.com/company/innosight-llc/",
   YeloBank: "https://www.yelo.az/",
+  CodeMarkGithub: "https://github.com/Ahm3tJ4f/codemark",
+  CodeMarkDemo: "https://ahm3tj4f.github.io/codemark/",
 } as const;
 
 export const ASCII_WAVE_CONFIG = {

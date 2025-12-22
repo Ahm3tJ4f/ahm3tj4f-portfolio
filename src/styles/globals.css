@@ -71,7 +71,7 @@
   --brand-cream: #ffecd1;
   --brand-orange: #ff7d00;
   --brand-brown: #78290f;
-  --background: oklch(0.9794 0.0074 76.75);
+  --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -86,7 +86,7 @@
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.85 0 0);
+  --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   --chart-1: oklch(0.646 0.222 41.116);
@@ -159,60 +159,81 @@
   }
 }
 
-h1.halftone-accent {
-  --dot-size: 6px;
-  --dot-gap: 10px;
-  --left-width: 60px;
-  --bottom-height: 50px;
-  --bottom-width: 34%;
-}
-
-h2.halftone-accent {
-  --dot-size: 4px;
-  --dot-gap: 6px;
-  --left-width: 24px;
-  --bottom-height: 19px;
-  --bottom-width: 39%;
-}
-
-h3.halftone-accent {
-  --dot-size: 3px;
-  --dot-gap: 5px;
-  --left-width: 18px;
-  --bottom-height: 14px;
-  --bottom-width: 25%;
-}
-
 .halftone-accent {
   position: relative;
-  padding-left: calc(var(--left-width, 60px) * 1.25);
-  padding-bottom: calc(var(--bottom-height, 50px) * 1.15);
+  padding-left: calc(var(--left-width, 60px) + 16px);
+  padding-bottom: calc(var(--bottom-height, 50px) + 12px);
 }
 
-.halftone-accent::before,
-.halftone-accent::after {
+.halftone-accent::before {
   content: "";
   position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--bottom-width, 35%);
   background-image: radial-gradient(
     circle,
     var(--dot-color, var(--brand-orange)) calc(var(--dot-size, 8px) / 2),
     transparent calc(var(--dot-size, 8px) / 2)
   );
   background-size: var(--dot-gap, 10px) var(--dot-gap, 10px);
+  background-position: left bottom;
+  clip-path: polygon(
+    0 0,
+    var(--left-width, 60px) 0,
+    var(--left-width, 60px) calc(100% - var(--bottom-height, 50px)),
+    100% calc(100% - var(--bottom-height, 50px)),
+    100% 100%,
+    0 100%
+  );
+  pointer-events: none; /* Ensures it doesn't interfere with interactions */
 }
 
-/* Left vertical column of dots */
-.halftone-accent::before {
-  left: 0;
-  top: 0;
-  bottom: var(--bottom-height, 50px);
-  width: var(--left-width, 60px);
+.halftone-heading {
+  --dot-size: 5px;
+  --dot-gap: 8px;
+  --left-width: 32px;
+  --bottom-height: 32px;
+  --bottom-width: 126px;
+
+  @media (min-width: 768px) {
+    --dot-size: 8px;
+    --dot-gap: 12px;
+    --left-width: 48px;
+    --bottom-height: 48px;
+    --bottom-width: 146px;
+  }
 }
 
-/* Bottom horizontal row of dots */
-.halftone-accent::after {
-  left: 0;
-  bottom: 0;
-  height: var(--bottom-height, 50px);
-  width: var(--bottom-width, 35%);
+.halftone-approach {
+  --dot-size: 4px;
+  --dot-gap: 6.8px;
+  --left-width: 28px;
+  --bottom-height: 29px;
+  --bottom-width: 86px;
+
+  @media (min-width: 768px) {
+    --dot-size: 5px;
+    --dot-gap: 7.6px;
+    --left-width: 31.5px;
+    --bottom-height: 32px;
+    --bottom-width: 39.5%;
+  }
 }
+/* 
+.halftone-experience {
+  --dot-size: 5px;
+  --dot-gap: 8px;
+  --left-width: 32px;
+  --bottom-height: 32px;
+  --bottom-width: 44%;
+
+  @media (min-width: 768px) {
+    --dot-size: 8px;
+    --dot-gap: 12px;
+    --left-width: 48px;
+    --bottom-height: 48px;
+    --bottom-width: 146px;
+  }
+} */

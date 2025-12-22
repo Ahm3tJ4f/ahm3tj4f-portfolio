@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Navigation } from "@/components/navigation";
-import "./globals.css";
+import "@/styles/globals.css";
 import HackWarning from "@/components/hack-warning";
 
 export const metadata: Metadata = {
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-background text-foreground">
-        <div className="max-w-2xl min-h-screen mx-auto px-4 mb-48">
+        <div className="max-w-2xl min-h-screen mx-auto px-4 mb-24 md:mb-48">
           <HackWarning />
           <Navigation />
           {children}

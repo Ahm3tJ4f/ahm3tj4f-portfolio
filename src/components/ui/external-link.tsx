@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function ExternalLink({
   href,
   children,
@@ -8,7 +10,7 @@ export function ExternalLink({
   className?: string;
 }) {
   return (
-    <a
+    <Link
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -17,6 +19,6 @@ export function ExternalLink({
       }`}
     >
       {children}
-    </a>
+    </Link>
   );
 }

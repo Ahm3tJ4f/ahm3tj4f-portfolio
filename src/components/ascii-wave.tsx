@@ -2,27 +2,36 @@
 
 import { useEffect, useRef } from "react";
 import { ASCII_WAVE_CONFIG as BASE_CONFIG } from "@/lib/constants";
-import { getDeviceFingerprint, SeededRandom } from "@/lib/utils";
+import { getDeviceFingerprint } from "@/lib/utils";
 
 const fingerprint = getDeviceFingerprint();
-const rng = new SeededRandom(fingerprint - 12312);
 
-const shuffledColors = [...BASE_CONFIG.colors].sort(() => rng.next() - 0.5);
+// Simple pseudo-random generator using the fingerprint
+let seed = fingerprint - 12312;
+
+const random = () => {
+  const x = Math.sin(seed++) * 10000;
+  return x - Math.floor(x);
+};
+
+const range = (min: number, max: number) => min + random() * (max - min);
+
+const shuffledColors = [...BASE_CONFIG.colors].sort(() => random() - 0.5);
 
 const config = {
   ...BASE_CONFIG,
   colors: shuffledColors,
-  wave1: { x: BASE_CONFIG.wave1.x + rng.range(-0.05, 0.05) },
+  wave1: { x: BASE_CONFIG.wave1.x + range(-0.05, 0.05) },
   wave2: {
-    y: BASE_CONFIG.wave2.y + rng.range(-0.05, 0.05),
-    time: BASE_CONFIG.wave2.time + rng.range(-0.1, 0.1),
+    y: BASE_CONFIG.wave2.y + range(-0.05, 0.05),
+    time: BASE_CONFIG.wave2.time + range(-0.1, 0.1),
   },
   wave3: {
-    mix: BASE_CONFIG.wave3.mix + rng.range(-0.02, 0.02),
-    time: BASE_CONFIG.wave3.time + rng.range(-0.1, 0.1),
+    mix: BASE_CONFIG.wave3.mix + range(-0.02, 0.02),
+    time: BASE_CONFIG.wave3.time + range(-0.1, 0.1),
   },
   // Randomize speed slightly
-  speed: BASE_CONFIG.speed * rng.range(0.8, 1.5),
+  speed: BASE_CONFIG.speed * range(0.8, 1.5),
 };
 
 export function AsciiWave() {

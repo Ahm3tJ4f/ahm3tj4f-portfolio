@@ -8,22 +8,15 @@ export default function HomeComponent() {
   const yearsOfExperience = dayjs().year() - 2022;
 
   return (
-    <div className=" flex flex-col gap-24">
-      <div className="space-y-6">
-        <h1 className="halftone-accent inline-block text-7xl font-bold tracking-tight  mb-12">
+    <div className="flex flex-col gap-16 md:gap-16">
+      <div className="space-y-5 md:space-y-6">
+        <h1 className="halftone-accent halftone-heading inline-block text-6xl md:text-7xl font-bold">
           Ahmad Jafarov
         </h1>
         <p>
           Hey there! I&apos;m Ahmad, a Software developer who&apos;s spent the
           last {yearsOfExperience} years getting unreasonably invested in web
           and mobile development with React.
-        </p>
-
-        <p>
-          I love building things that feel fast, smooth, and well put together.
-          Not the &quot;it works, don&apos;t touch it&quot; kind of apps, but
-          ones that actually feel solid when you use them. The kind where you
-          click a button and it just... responds. Revolutionary, I know.
         </p>
 
         <p>
@@ -51,9 +44,9 @@ export default function HomeComponent() {
         </p>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-2 ">
         <AsciiWave />
-        <p className="text-xs text-muted-foreground text-center font-mono">
+        <p className=" text-xs text-muted-foreground text-center font-mono">
           (Here&apos;s a fun ASCII wave I made for you. You&apos;re welcome.{" "}
           <Link
             href="/blogs"
@@ -65,10 +58,11 @@ export default function HomeComponent() {
         </p>
       </div>
 
-      <div className="space-y-6">
-        <h2 className="halftone-accent inline-block text-4xl font-semibold tracking-tight mb-8">
+      <div className="space-y-5 md:space-y-6">
+        <h2 className="halftone-accent halftone-approach inline-block text-4xl md:text-5xl font-semibold tracking-tight mb-6 md:mb-8">
           Approach
         </h2>
+
         <p>
           I&apos;m lowkey obsessed with understanding how things work under the
           hood. It comes from a genuine curiosity to understand the background.
@@ -94,7 +88,7 @@ export default function HomeComponent() {
           to compromise on quality. Whether it&apos;s diving into a new
           technology or tackling a stubborn bug, I tend to get consumed by the
           challenge until I figure it out. I&apos;m not just looking for a quick
-          fix—I want to understand the <em>why</em> behind it
+          fix - I want to understand the <em>why</em> behind it
         </p>
 
         <p>
