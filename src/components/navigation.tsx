@@ -1,31 +1,17 @@
 "use client";
 
-// import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-// import { Menu, X } from "lucide-react";
-// import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
-import type { NavigationItem } from "@/types";
-
-const routes: NavigationItem[] = [
-  { to: "/", label: "Home" },
-  { to: "/experience", label: "Experience" },
-  { to: "/projects", label: "Projects" },
-  { to: "/contact", label: "Contact" },
-  { to: "/blogs", label: "Blogs" },
-];
+import { routes } from "@/data/navigation";
 
 export function Navigation() {
   const pathname = usePathname();
 
   return (
     <nav className="py-10 mx-auto mb-4 md:mb-24">
-      {/* Desktop Nav */}
       <ul className="flex md:gap-6 text-sm md:text-lg font-medium ">
         {routes.map(({ to, label }) => {
-          // Simple exact match or startsWith for sub-routes if needed
-          // For now assuming exact match except for home which might need logic
           const isActive =
             to === "/" ? pathname === "/" : pathname.startsWith(to);
 

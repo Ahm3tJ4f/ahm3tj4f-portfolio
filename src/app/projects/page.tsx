@@ -1,45 +1,7 @@
-import { ExternalLinks } from "@/lib/constants";
-import type { ProjectItem } from "@/types";
-import { Github, Globe } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
-
-const projects: ProjectItem[] = [
-  {
-    title: "PixelPro CRM",
-    description:
-      "Full-stack CRM with FastAPI backend and Next.js 15 frontend. Features citizen data integration (ASAN), Jitsi video meetings, and JWT auth.",
-    techStack: ["FastAPI", "Redis", "Docker", "PostgreSQL", "NextJS"],
-  },
-  {
-    title: "CodeMark",
-    description:
-      "Interactive coding platform. Users write React code and execute it in real time. Uses esbuild compiled to WebAssembly.",
-    techStack: ["React", "TypeScript", "WebAssembly"],
-    github: ExternalLinks.CodeMarkGithub,
-    link: ExternalLinks.CodeMarkDemo,
-  },
-  {
-    title: "4You",
-    description:
-      "Mental health platform built from scratch. Secure payments, doctor panels, and custom design system.",
-    techStack: ["NextJS", "TypeScript"],
-    link: ExternalLinks["4You"],
-  },
-  {
-    title: "Ferrum Capital",
-    description:
-      "Consumer finance mobile app. Features biometric auth (Native Swift/Kotlin SDKs), digital signing, video meetings, and partner marketplace.",
-    techStack: ["React Native", "Expo", "TypeScript"],
-    link: ExternalLinks.FerrumCapitalCustomerApp,
-  },
-  {
-    title: "Ferrum Capital Business",
-    description:
-      "B2B app for partners and sellers. Features obligation creation, QR scanning, ASAN digital signature integration, and PDF generation.",
-    techStack: ["React Native", "Expo", "TypeScript"],
-    link: ExternalLinks.FerrumCapitalBusinessApp,
-  },
-];
+import { Link2 as LinkIcon } from "lucide-react";
+import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
@@ -61,12 +23,12 @@ export default function Projects() {
           >
             <div className="flex items-baseline justify-between gap-4">
               <div className="flex flex-col gap-2">
-                <h2 className="text-lg md:text-xl font-bold font-mono text-brand-navy group-hover:text-brand-orange transition-colors">
+                <h2 className="text-xl md:text-2xl font-bold tracking-tight">
                   {project.title}
                 </h2>
                 <ul
                   aria-label="Technologies used"
-                  className="text-xs md:text-sm font-mono text-brand-navy/40 group-hover:text-brand-navy/60 list-none p-0 m-0"
+                  className="text-xs md:text-sm font-mono text-brand-navy/40 list-none p-0 m-0"
                 >
                   {project.techStack.map((tech, i) => (
                     <li key={tech} className="inline">
@@ -82,7 +44,7 @@ export default function Projects() {
                 </ul>
               </div>
 
-              <div className="flex items-center gap-2 shrink-0 self-start mt-1">
+              <div className="flex items-center  gap-4  md:gap-2 shrink-0 self-start mt-1">
                 {project.github && (
                   <Link
                     href={project.github}
@@ -90,8 +52,15 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="text-brand-navy/60 hover:text-brand-orange transition-colors p-1"
                     aria-label={`View source code for ${project.title}`}
+                    title={project.github}
                   >
-                    <Github className="w-4 h-4" />
+                    <Image
+                      className="text-red-500"
+                      src="/github.svg"
+                      alt="GitHub"
+                      width={18}
+                      height={18}
+                    />
                   </Link>
                 )}
                 {project.link && (
@@ -101,8 +70,9 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="text-brand-navy/60 hover:text-brand-orange transition-colors p-1"
                     aria-label={`Visit project website for ${project.title}`}
+                    title={project.link}
                   >
-                    <Globe className="w-4 h-4" />
+                    <LinkIcon className="w-5 h-5" />
                   </Link>
                 )}
               </div>

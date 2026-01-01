@@ -12,6 +12,8 @@ export const ExternalLinks = {
   YeloBank: "https://www.yelo.az/",
   CodeMarkGithub: "https://github.com/Ahm3tJ4f/codemark",
   CodeMarkDemo: "https://ahm3tj4f.github.io/codemark/",
+  SongPalBot: "https://t.me/songpal_bot",
+  SongPalBotGithub: "https://github.com/Ahm3tJ4f/song-pal-bot",
 } as const;
 
 export const ASCII_WAVE_CONFIG = {

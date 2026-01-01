@@ -1,0 +1,11 @@
+import type { NavigationItem } from "@/types";
+
+export const routes: NavigationItem[] = [
+  { to: "/", label: "Home" },
+  { to: "/experience", label: "Experience" },
+  { to: "/projects", label: "Projects" },
+  { to: "/contact", label: "Contact" },
+  { to: "/blogs", label: "Blogs" },
+];
+
+

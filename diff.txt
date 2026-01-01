@@ -1,0 +1,8 @@
+feat: restructure navigation, experience, and projects; update content; remove legacy files
+
+- Remove legacy static files (`data.md`, `public/favicon.svg`, `src/favicon.ico`)
+- Migrate navigation, experience, and projects data to `/data` modules
+- Refactor `/experience` and `/projects` pages to source data from new modules and update imports
+- Improve layout and headings for `/blogs` and `/contact` pages
+- Update home content with revised project description and details
+- Add SongPal bot links to external links constants

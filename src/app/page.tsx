@@ -25,10 +25,8 @@ export default function HomeComponent() {
             Ferrum Capital
           </ExternalLink>
           , where I oversee the maintenance and development of internal frontend
-          projects.
-          {/* TODO: Add more details about the projects */} I also led the
-          development of two mobile applications focused on credit loans and
-          business operations.
+          projects. I&apos;m also actively developing three mobile applications
+          focused on credit loans and business operations.
         </p>
 
         <p>
@@ -36,8 +34,8 @@ export default function HomeComponent() {
           <ExternalLink href={ExternalLinks.TikTokGuitar}>
             playing guitar
           </ExternalLink>{" "}
-          (my neighbors definitely love it), training Brazilian Jiu-Jitsu (blue
-          belt btw), and adding books to my{" "}
+          (my neighbors definitely love it), training Brazilian Jiu-Jitsu, and
+          adding books to my{" "}
           <ExternalLink href={ExternalLinks.Goodreads}>Goodreads</ExternalLink>{" "}
           &quot;to-read&quot; list to pretend I&apos;m actually going to read
           them.
@@ -66,13 +64,14 @@ export default function HomeComponent() {
         <p>
           I&apos;m lowkey obsessed with understanding how things work under the
           hood. It comes from a genuine curiosity to understand the background.
-          In high school, I found that when I took the time to learn the proof
-          and intuition behind formulas, I became significantly better at
-          implementing the solutions, not to mention acing the exams (thanks to{" "}
+          In high school, I learned that grasping the intuition behind formulas
+          (shoutout to{" "}
           <ExternalLink href={ExternalLinks.ThreeBlueOneBrown}>
             3Blue1Brown
           </ExternalLink>
-          ).
+          ) made me significantly better at implementation. This foundational
+          knowledge allows me to excel at solutions and ship projects much
+          faster, because I don&apos;t get stuck on the basics.
           <br />
           <br />
           However, I&apos;m realistic. I know I can&apos;t learn the backstage
