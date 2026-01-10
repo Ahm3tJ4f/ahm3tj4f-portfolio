@@ -10,7 +10,7 @@ export function Navigation() {
 
   return (
     <nav className="py-10 mx-auto mb-4 md:mb-24">
-      <ul className="flex md:gap-6 text-sm md:text-lg font-medium ">
+      <ul className="flex md:gap-6 text-sm md:text-lg font-medium">
         {routes.map(({ to, label }) => {
           const isActive =
             to === "/" ? pathname === "/" : pathname.startsWith(to);
