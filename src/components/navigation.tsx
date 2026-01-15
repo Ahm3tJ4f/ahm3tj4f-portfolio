@@ -10,7 +10,7 @@ export function Navigation() {
 
   return (
     <nav className="py-10 mx-auto mb-4 md:mb-24">
-      <ul className="flex md:gap-6 text-sm md:text-lg font-medium">
+      <ul className="flex md:gap-12 text-sm md:text-lg font-medium">
         {routes.map(({ to, label }) => {
           const isActive =
             to === "/" ? pathname === "/" : pathname.startsWith(to);
@@ -21,7 +21,7 @@ export function Navigation() {
                 href={to}
                 className={cn(
                   "decoration-4 hover:underline decoration-brand-orange underline-offset-6 px-2 pb-1 transition-colors",
-                  isActive && "underline"
+                  isActive && "underline",
                 )}
               >
                 {label}

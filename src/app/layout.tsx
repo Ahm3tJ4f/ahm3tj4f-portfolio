@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
 import "@/styles/globals.css";
 import HackWarning from "@/components/hack-warning";
 
@@ -16,10 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-background text-foreground">
-        <div className="max-w-2xl min-h-screen mx-auto px-4 mb-24 md:mb-48">
+        <div className="max-w-2xl min-h-screen mx-auto px-4 py-8 flex flex-col">
           <HackWarning />
           <Navigation />
-          {children}
+          <main className="flex-1">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
