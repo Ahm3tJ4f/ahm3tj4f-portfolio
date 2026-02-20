@@ -1,4 +1,3 @@
-import Link from "next/link";
 import dayjs from "dayjs";
 import { ExternalLinks } from "@/lib/constants";
 import { ExternalLink } from "@/components/ui/external-link";
@@ -45,14 +44,7 @@ export default function HomeComponent() {
       <div className="flex flex-col gap-2 ">
         <AsciiWave />
         <p className=" text-xs text-muted-foreground text-center font-mono">
-          (Here&apos;s a fun ASCII wave I made for you. You&apos;re welcome.{" "}
-          <Link
-            href="/blogs/creating-ascii-wave-pattern"
-            className="font-medium text-brand-orange hover:underline underline-offset-4 decoration-brand-orange transition-opacity"
-          >
-            Learn how I made it
-          </Link>
-          )
+          (Here&apos;s a fun ASCII wave I made for you. You&apos;re welcome.)
         </p>
       </div>
 
