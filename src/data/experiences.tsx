@@ -4,34 +4,31 @@ import type { ExperienceItem } from "@/types";
 
 export const experiences: ExperienceItem[] = [
   {
-    role: "Leading Front-End Developer",
+    role: "Front-End Developer",
     company: "Ferrum Capital",
     companyUrl: ExternalLinks.FerrumCapital,
     period: "August 2023 - Present",
     location: "Baku, Azerbaijan",
     description: [
       <>
-        Leading the frontend development of internal financial tools and
-        customer-facing products. I redesigned and built the CRM system to
-        streamline operations across 4 departments and led the development of
-        two key mobile applications (Expo), serving over 150,000 users with
-        features like video meetings and digital document signing.
+        Leading frontend development on internal systems (CRMs, ERP tools) and
+        public mobile applications, taking projects from architecture to delivery.
       </>,
-    ],
-  },
-  {
-    role: "Co-Founder & Front-End Developer",
-    company: "4YOU",
-    companyUrl: ExternalLinks["4You"],
-    period: "September 2024 - August 2025",
-    location: "Baku, Azerbaijan",
-    description: [
       <>
-        Built a comprehensive mental health platform from the ground up using
-        Next.js 14. Architected the entire frontend, including a secure payment
-        system, doctor admin panels, and a custom design system with
-        TailwindCSS, while contributing to the product strategy as a founding
-        member.
+        Documented technical specifications, API integrations, and architectural
+        decisions for all frontend projects.
+      </>,
+      <>
+        Conducted code reviews, established coding standards, and implemented
+        best practices for code quality.
+      </>,
+      <>
+        Managed workloads and coordinated between developers, aligned with
+        backend teams for seamless integration.
+      </>,
+      <>
+        Implemented CI/CD pipelines for automated testing and deployment
+        workflows.
       </>,
     ],
   },
@@ -43,24 +40,36 @@ export const experiences: ExperienceItem[] = [
     location: "Baku, Azerbaijan",
     description: [
       <>
-        Developed specialized internal tools including an office booking system
-        and a CRM for citizen onboarding. Engineered core identity verification
-        features using browser-based face detection and built custom mobile SDKs
-        (Swift/Kotlin) for secure biometric authentication.
+        Developed the frontend of an internal office room booking system with a
+        Google Calendar–like UI and an admin panel for employee management
+        using Next.js 14, server actions, React Hook Form, and Zod for
+        server/client validation.
+      </>,
+      <>
+        Designed and implemented a CRM platform for citizen onboarding with
+        integrated video calls and browser/backend-level face detection for
+        identity verification.
+      </>,
+      <>
+        Built Swift and Kotlin SDKs for face liveness detection; implemented
+        FastAPI backend with Google MediaPipe and authenticated WebSocket
+        connection for real-time active liveness verification.
       </>,
     ],
   },
   {
     role: "Intern",
-    company: "YeloBank - ITLab",
+    company: "YeloBank",
     companyUrl: ExternalLinks.YeloBank,
     period: "July - August 2022",
     location: "Baku, Azerbaijan",
     description: [
       <>
-        Selected as one of 50 top candidates from 5000 applicants. Gained
-        hands-on experience with Java, database fundamentals, and Agile
-        methodologies within a corporate banking environment.
+        Selected as one of 50 students from 5000 applicants.
+      </>,
+      <>
+        Worked with Spring and Spring Boot, connected applications to MySQL,
+        performed data manipulation, and worked with REST APIs.
       </>,
     ],
   },

@@ -14,6 +14,7 @@ export const ExternalLinks = {
   CodeMarkDemo: "https://ahm3tj4f.github.io/codemark/",
   SongPalBot: "https://t.me/songpal_bot",
   SongPalBotGithub: "https://github.com/Ahm3tJ4f/song-pal-bot",
+  PixelProCRM: "https://github.com/Ahm3tJ4f/pixelpro-crm",
 } as const;
 
 export const ASCII_WAVE_CONFIG = {
