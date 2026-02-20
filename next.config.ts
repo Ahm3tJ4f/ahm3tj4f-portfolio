@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   async headers() {
     return [
       {
@@ -24,7 +25,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: "X-XSS-Protection",
-            value: "1; mode=block",
+            value: "1: mode=block",
           },
           {
             key: "Referrer-Policy",
@@ -41,3 +42,4 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+

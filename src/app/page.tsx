@@ -20,13 +20,13 @@ export default function HomeComponent() {
         </p>
 
         <p>
-          Currently, I&apos;m the Leading Frontend Developer at{" "}
+          Currently, I&apos;m the Lead Frontend Developer at{" "}
           <ExternalLink href={ExternalLinks.FerrumCapital}>
             Ferrum Capital
           </ExternalLink>
-          , where I oversee the maintenance and development of internal frontend
-          projects. I&apos;m also actively developing three mobile applications
-          focused on credit loans and business operations.
+          , working on internal systems like CRMs and ERP tools, and building
+          public mobile apps for factoring and business operations, taking
+          projects from architecture all the way through to delivery.
         </p>
 
         <p>
@@ -47,7 +47,7 @@ export default function HomeComponent() {
         <p className=" text-xs text-muted-foreground text-center font-mono">
           (Here&apos;s a fun ASCII wave I made for you. You&apos;re welcome.{" "}
           <Link
-            href="/blogs"
+            href="/blogs/creating-ascii-wave-pattern"
             className="font-medium text-brand-orange hover:underline underline-offset-4 decoration-brand-orange transition-opacity"
           >
             Learn how I made it
@@ -69,35 +69,27 @@ export default function HomeComponent() {
           <ExternalLink href={ExternalLinks.ThreeBlueOneBrown}>
             3Blue1Brown
           </ExternalLink>
-          ) made me significantly better at implementation. This foundational
-          knowledge allows me to excel at solutions and ship projects much
-          faster, because I don&apos;t get stuck on the basics.
+          ) made me significantly better at implementation.
           <br />
           <br />
           However, I&apos;m realistic. I know I can&apos;t learn the backstage
           of everything. Sometimes I have to be satisfied with the abstraction,
           otherwise I&apos;d never deliver a project considering what a rabbit
-          hole the development ecosystem is.
+          hole the software engineering is.
         </p>
 
         <p>
-          I really believe that I think differently when it comes to solving
-          problems. I manage stress well and focus on dividing tasks effectively
-          within the team. I always aim to follow best principles and never want
-          to compromise on quality. Whether it&apos;s diving into a new
-          technology or tackling a stubborn bug, I tend to get consumed by the
-          challenge until I figure it out. I&apos;m not just looking for a quick
-          fix - I want to understand the <em>why</em> behind it
-        </p>
-
-        <p>
-          Once I have a working solution, I care a lot about how it lives on. I
-          always try to refactor and simplify the code so that my teammates (and
-          my future self) can work with it easily, without needing to dig into
-          the complexity I wrestled with. For me, solving the problem is step
-          one; making the solution maintainable is what actually counts. I
-          believe this mindset is what makes me a truly effective problem
-          solver.
+          I try to build tools that genuinely help people. I remember when I was
+          an undergraduate student, I built a website that executed React code
+          and let users take markdown notes (Jupyter Notebook–style). Seeing my
+          friends actually use it to study and prepare for exams was one of my
+          proudest moments at university. It showed me that technology is most
+          meaningful when it makes someone’s life easier. Experiences like that
+          also taught me how much perspective matters: it only takes one person
+          struggling with an application to reveal the real-world importance of
+          accessibility and usability. That’s why I invest deeply in building
+          products that are both usable and inclusive, ensuring people of all
+          abilities can benefit from the tools I create.
         </p>
       </div>
     </div>

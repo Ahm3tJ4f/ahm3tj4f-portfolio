@@ -45,6 +45,12 @@ export function Footer() {
               </ExternalLink>
             </span>
           </li>
+          <li className="flex items-center gap-3">
+            <span className=" w-20 shrink-0 text-sm">Resume</span>
+            <span className="text-xs md:text-sm text-muted-foreground font-mono">
+              <ExternalLink href="/resume.pdf">View Resume</ExternalLink>
+            </span>
+          </li>
         </ul>
       </div>
     </footer>
