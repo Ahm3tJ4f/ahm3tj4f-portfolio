@@ -54,34 +54,33 @@ export default function HomeComponent() {
         </h2>
 
         <p>
-          I&apos;m lowkey obsessed with understanding how things work under the
-          hood. It comes from a genuine curiosity to understand the background.
-          In high school, I learned that grasping the intuition behind formulas
-          (shoutout to{" "}
+          I&apos;m obsessed with understanding how things work under the hood.
+          Grasping the intuition behind concepts (shoutout to{" "}
           <ExternalLink href={ExternalLinks.ThreeBlueOneBrown}>
             3Blue1Brown
           </ExternalLink>
-          ) made me significantly better at implementation.
-          <br />
-          <br />
-          However, I&apos;m realistic. I know I can&apos;t learn the backstage
-          of everything. Sometimes I have to be satisfied with the abstraction,
-          otherwise I&apos;d never deliver a project considering what a rabbit
-          hole the software engineering is.
+          ) made me better at implementation. But I'm realistic-sometimes I have
+          to trust the abstraction, otherwise I&apos;d never ship anything.
         </p>
+
+        {/*<p>
+          I try to build tools that genuinely help people. When I was a university student, I built a
+          React notebook app for studying. Watching my friends actually use it to
+          prepare for exams showed me technology is most meaningful when it
+          makes someone&apos;s life easier.
+        </p>*/}
 
         <p>
           I try to build tools that genuinely help people. I remember when I was
           an undergraduate student, I built a website that executed React code
-          and let users take markdown notes (Jupyter Notebook–style). Seeing my
-          friends actually use it to study and prepare for exams was one of my
-          proudest moments at university. It showed me that technology is most
-          meaningful when it makes someone’s life easier. Experiences like that
-          also taught me how much perspective matters: it only takes one person
-          struggling with an application to reveal the real-world importance of
-          accessibility and usability. That’s why I invest deeply in building
-          products that are both usable and inclusive, ensuring people of all
-          abilities can benefit from the tools I create.
+          and let users take markdown notes (Jupyter Notebook–style).Watching my
+          friends actually use it to prepare for exams showed me technology is
+          most meaningful when it makes someone&apos;s life easier. Experiences
+          like that also taught me how much perspective matters: it only takes
+          seeing one person struggling with any kind of software to understand
+          the real-world importance of accessibility and usability. That’s why I
+          invest deeply in building products that are both usable and inclusive,
+          ensuring people of all abilities can benefit from the tools I create.
         </p>
       </div>
     </div>

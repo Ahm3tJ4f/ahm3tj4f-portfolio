@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased bg-background text-foreground">
-        <div className="max-w-2xl min-h-screen mx-auto px-4 py-8 flex flex-col">
+        <div className="max-w-2xl min-h-screen mx-auto px-4 py-10 md:py-20 flex flex-col gap-12">
           <HackWarning />
           <Navigation />
           <main className="flex-1">{children}</main>
