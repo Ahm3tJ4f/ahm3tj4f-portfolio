@@ -20,38 +20,40 @@ export function Footer() {
         <p className="text-sm text-muted-foreground">
           Let&apos;s work together!
         </p>
-        <ul className="space-y-3">
-          <li className="flex items-center gap-3">
-            <span className="w-20 shrink-0 text-sm">Email</span>
-            <span className="text-xs md:text-sm text-muted-foreground font-mono">
-              <ExternalLink href={CONTACT_LINKS.email.href}>
+        <address className="not-italic">
+        <dl className="space-y-3">
+          <div className="flex items-center gap-3">
+            <dt className="w-20 shrink-0 text-sm">Email</dt>
+            <dd className="text-xs md:text-sm text-muted-foreground font-mono m-0">
+              <ExternalLink href={CONTACT_LINKS.email.href} ariaLabel="Send email">
                 {CONTACT_LINKS.email.label}
               </ExternalLink>
-            </span>
-          </li>
-          <li className="flex items-center gap-3">
-            <span className=" w-20 shrink-0 text-sm">LinkedIn</span>
-            <span className="text-xs md:text-sm text-muted-foreground font-mono">
-              <ExternalLink href={CONTACT_LINKS.linkedin.href}>
+            </dd>
+          </div>
+          <div className="flex items-center gap-3">
+            <dt className="w-20 shrink-0 text-sm">LinkedIn</dt>
+            <dd className="text-xs md:text-sm text-muted-foreground font-mono m-0">
+              <ExternalLink href={CONTACT_LINKS.linkedin.href} ariaLabel="View LinkedIn profile">
                 {CONTACT_LINKS.linkedin.label}
               </ExternalLink>
-            </span>
-          </li>
-          <li className="flex items-center gap-3">
-            <span className=" w-20 shrink-0 text-sm">GitHub</span>
-            <span className="text-xs md:text-sm text-muted-foreground font-mono">
-              <ExternalLink href={CONTACT_LINKS.github.href}>
+            </dd>
+          </div>
+          <div className="flex items-center gap-3">
+            <dt className="w-20 shrink-0 text-sm">GitHub</dt>
+            <dd className="text-xs md:text-sm text-muted-foreground font-mono m-0">
+              <ExternalLink href={CONTACT_LINKS.github.href} ariaLabel="View GitHub profile">
                 {CONTACT_LINKS.github.label}
               </ExternalLink>
-            </span>
-          </li>
-          <li className="flex items-center gap-3">
-            <span className=" w-20 shrink-0 text-sm">Resume</span>
-            <span className="text-xs md:text-sm text-muted-foreground font-mono">
-              <ExternalLink href="/resume.pdf">View Resume</ExternalLink>
-            </span>
-          </li>
-        </ul>
+            </dd>
+          </div>
+          <div className="flex items-center gap-3">
+            <dt className="w-20 shrink-0 text-sm">Resume</dt>
+            <dd className="text-xs md:text-sm text-muted-foreground font-mono m-0">
+              <ExternalLink href="/resume.pdf" ariaLabel="View resume PDF">View Resume</ExternalLink>
+            </dd>
+          </div>
+        </dl>
+        </address>
       </div>
     </footer>
   );

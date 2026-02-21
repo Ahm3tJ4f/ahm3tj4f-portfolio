@@ -151,5 +151,5 @@ export function AsciiWave() {
     };
   }, []);
 
-  return <canvas ref={canvasRef} className="block" />;
+  return <canvas ref={canvasRef} className="block" role="img" aria-label="Animated ASCII wave showing colorful character patterns" />;
 }

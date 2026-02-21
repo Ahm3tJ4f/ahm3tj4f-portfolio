@@ -8,8 +8,8 @@ export default function HomeComponent() {
 
   return (
     <div className="flex flex-col gap-16 md:gap-16">
-      <div className="space-y-5 md:space-y-6">
-        <h1 className="halftone-accent halftone-heading inline-block text-6xl md:text-7xl font-bold">
+      <section className="space-y-5 md:space-y-6" aria-labelledby="about-heading">
+        <h1 id="about-heading" className="halftone-accent halftone-heading inline-block text-6xl md:text-7xl font-bold">
           Ahmad Jafarov
         </h1>
         <p>
@@ -20,7 +20,10 @@ export default function HomeComponent() {
 
         <p>
           Currently, I&apos;m the Lead Frontend Developer at{" "}
-          <ExternalLink href={ExternalLinks.FerrumCapital}>
+          <ExternalLink
+            href={ExternalLinks.FerrumCapital}
+            ariaLabel="Ferrum Capital website"
+          >
             Ferrum Capital
           </ExternalLink>
           , working on internal systems like CRMs and ERP tools, and building
@@ -30,45 +33,49 @@ export default function HomeComponent() {
 
         <p>
           In my spare time, I&apos;m usually hanging out with my cat,{" "}
-          <ExternalLink href={ExternalLinks.TikTokGuitar}>
+          <ExternalLink
+            href={ExternalLinks.TikTokGuitar}
+            ariaLabel="Guitar covers on TikTok"
+          >
             playing guitar
           </ExternalLink>{" "}
           (my neighbors definitely love it), training Brazilian Jiu-Jitsu, and
           adding books to my{" "}
-          <ExternalLink href={ExternalLinks.Goodreads}>Goodreads</ExternalLink>{" "}
+          <ExternalLink
+            href={ExternalLinks.Goodreads}
+            ariaLabel="My Goodreads profile"
+          >
+            Goodreads
+          </ExternalLink>{" "}
           &quot;to-read&quot; list to pretend I&apos;m actually going to read
           them.
         </p>
-      </div>
+      </section>
 
-      <div className="flex flex-col gap-2 ">
+      <figure className="flex flex-col gap-2 ">
         <AsciiWave />
-        <p className=" text-xs text-muted-foreground text-center font-mono">
+        <figcaption className="text-xs text-muted-foreground text-center font-mono">
           (Here&apos;s a fun ASCII wave I made for you. You&apos;re welcome.)
-        </p>
-      </div>
+        </figcaption>
+      </figure>
 
-      <div className="space-y-5 md:space-y-6">
-        <h2 className="halftone-accent halftone-approach inline-block text-4xl md:text-5xl font-semibold tracking-tight mb-6 md:mb-8">
+      <section className="space-y-5 md:space-y-6" aria-labelledby="approach-heading">
+        <h2 id="approach-heading" className="halftone-accent halftone-approach inline-block text-4xl md:text-5xl font-semibold tracking-tight mb-6 md:mb-8">
           Approach
         </h2>
 
         <p>
           I&apos;m obsessed with understanding how things work under the hood.
           Grasping the intuition behind concepts (shoutout to{" "}
-          <ExternalLink href={ExternalLinks.ThreeBlueOneBrown}>
+          <ExternalLink
+            href={ExternalLinks.ThreeBlueOneBrown}
+            ariaLabel="3Blue1Brown YouTube channel"
+          >
             3Blue1Brown
           </ExternalLink>
-          ) made me better at implementation. But I'm realistic-sometimes I have
-          to trust the abstraction, otherwise I&apos;d never ship anything.
+          ) made me better at implementation. But I&apos;m realistic-sometimes I
+          have to trust the abstraction, otherwise I&apos;d never ship anything.
         </p>
-
-        {/*<p>
-          I try to build tools that genuinely help people. When I was a university student, I built a
-          React notebook app for studying. Watching my friends actually use it to
-          prepare for exams showed me technology is most meaningful when it
-          makes someone&apos;s life easier.
-        </p>*/}
 
         <p>
           I try to build tools that genuinely help people. I remember when I was
@@ -82,7 +89,7 @@ export default function HomeComponent() {
           invest deeply in building products that are both usable and inclusive,
           ensuring people of all abilities can benefit from the tools I create.
         </p>
-      </div>
+      </section>
     </div>
   );
 }

@@ -9,7 +9,7 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="mx-auto ">
+    <nav aria-label="Main navigation" className="mx-auto ">
       <ul className="flex md:gap-8 gap-2 md:text-lg font-medium">
         {routes.map(({ to, label }) => {
           const isActive =

@@ -23,6 +23,7 @@ export default function Experience() {
                 {exp.companyUrl ? (
                   <ExternalLink
                     href={exp.companyUrl}
+                    ariaLabel={`${exp.company} website`}
                     className="text-brand-brown hover:text-brand-orange hover:underline decoration-brand-orange underline-offset-4 transition-colors"
                   >
                     {exp.company}
