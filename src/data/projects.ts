@@ -20,7 +20,7 @@ export const projects: ProjectItem[] = [
   {
     title: "Ferrum Capital Mobile",
     description:
-      "Mobile banking app with 100,000+ active users. Designed and implemented full-stack SIMA citizen certificate authentication with X.509 certificate parsing and RSA-SHA256 signature verification. Developed multi-module architecture for obligations, factoring, and video-meetings with Firebase Cloud Messaging push notifications and offline capabilities.",
+      "Mobile factoring app with 100,000+ active users. Designed and implemented full-stack SIMA citizen certificate authentication with X.509 certificate parsing and RSA-SHA256 signature verification. Developed multi-module architecture for obligations, factoring, and video-meetings with Firebase Cloud Messaging push notifications and offline capabilities.",
     techStack: [
       "React Native (Expo)",
       "Expo Modules",
@@ -34,7 +34,7 @@ export const projects: ProjectItem[] = [
   {
     title: "4YOU",
     description:
-      "Mental health platform with Server Actions as type-safe RPC and end-to-end validation with Zod schemas. Built custom design system with shadcn/ui components and TailwindCSS. Implemented JWT token rotation via Edge middleware with automatic refresh on 401 responses and HTTP-only cookie-based session storage.",
+      "Mental health platform with 30+ partner psychologists and 400+ active customers. Built with Server Actions as type-safe RPC and end-to-end validation with Zod schemas. Custom design system with shadcn/ui components and TailwindCSS. Implemented JWT token rotation via Edge middleware with automatic refresh on 401 responses and HTTP-only cookie-based session storage.",
     techStack: [
       "Next.js 15",
       "TypeScript",
