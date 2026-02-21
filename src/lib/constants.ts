@@ -9,7 +9,6 @@ export const ExternalLinks = {
   Goodreads: "https://www.goodreads.com/user/show/63307480-ahmad-jafarov",
   "4You": "https://4youcare.com/",
   InnoSight: "https://www.linkedin.com/company/innosight-llc/",
-  YeloBank: "https://www.yelo.az/",
   CodeMarkGithub: "https://github.com/Ahm3tJ4f/codemark",
   CodeMarkDemo: "https://ahm3tj4f.github.io/codemark/",
   SongPalBot: "https://t.me/songpal_bot",

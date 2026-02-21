@@ -57,22 +57,6 @@ export const experiences: ExperienceItem[] = [
       </>,
     ],
   },
-  {
-    role: "Intern",
-    company: "YeloBank",
-    companyUrl: ExternalLinks.YeloBank,
-    period: "July - August 2022",
-    location: "Baku, Azerbaijan",
-    description: [
-      <>
-        Selected as one of 50 students from 5000 applicants.
-      </>,
-      <>
-        Worked with Spring and Spring Boot, connected applications to MySQL,
-        performed data manipulation, and worked with REST APIs.
-      </>,
-    ],
-  },
 ];
 
 
