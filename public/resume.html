@@ -494,9 +494,9 @@
                                 >
                                 <span> - </span>
                                 <time
-                                    class="date"
+                                    class="date ferrum-end-date"
                                     itemprop="endDate"
-                                    datetime="2025-04"
+                                    datetime=""
                                     >Present</time
                                 >
                             </div>
@@ -937,5 +937,25 @@
                 </dl>
             </section>
         </main>
+        <script>
+            // Update Ferrum Capital end date dynamically to current date
+            function updateFerrumEndDate() {
+                const now = new Date();
+                const year = now.getFullYear();
+                const month = String(now.getMonth() + 1).padStart(2, '0');
+                const datetimeValue = `${year}-${month}`;
+                
+                const ferrumEndDateElements = document.querySelectorAll('.ferrum-end-date');
+                ferrumEndDateElements.forEach(el => {
+                    el.setAttribute('datetime', datetimeValue);
+                });
+            }
+            
+            // Update immediately on page load
+            updateFerrumEndDate();
+            
+            // Update every minute to keep it current
+            setInterval(updateFerrumEndDate, 60000);
+        </script>
     </body>
 </html>
