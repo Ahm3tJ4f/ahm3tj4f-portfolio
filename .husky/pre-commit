@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Check if resume.html was modified
+if git diff --cached --name-only | grep -q "public/resume.html"; then
+    echo "📄 Generating resume.pdf from resume.html..."
+    pnpm precommit
+    
+    # Add the newly generated PDF to the commit
+    git add public/resume.pdf
+    echo "✅ resume.pdf updated and added to commit"
+fi

@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Ahmad Jafarov - Front-End Developer Resume "
+        />
+        <title>Ahmad Jafarov - Resume</title>
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Ahmad Jafarov",
+                "jobTitle": "Front-End Developer",
+                "url": "https://ahmadjaf.com",
+                "email": "ahmadjafarov02@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Baku",
+                    "addressCountry": "AZ"
+                },
+                "sameAs": [
+                    "https://linkedin.com/in/ahmad-jafarov",
+                    "https://github.com/ahmad-jafarov"
+                ],
+                "worksFor": [
+                    {
+                        "@type": "Organization",
+                        "name": "Ferrum Capital",
+                        "jobTitle": "Front-End Developer",
+                        "startDate": "2023-08"
+                    },
+                    {
+                        "@type": "Organization",
+                        "name": "InnoSight LLC",
+                        "jobTitle": "Software Developer",
+                        "startDate": "2024-03",
+                        "endDate": "2025-04"
+                    }
+                ],
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Azerbaijan State Oil and Industry University",
+                    "sameAs": "https://asoiu.edu.az",
+                    "hasCredential": {
+                        "@type": "EducationalOccupationalCredential",
+                        "credentialCategory": "bachelorDegree",
+                        "name": "Bachelor of Science in Computer Engineering",
+                        "educationalLevel": "Undergraduate",
+                        "dateIssued": "2023-06"
+                    }
+                },
+                "knowsAbout": [
+                    "JavaScript",
+                    "TypeScript",
+                    "Golang",
+                    "ReactJS",
+                    "NextJS",
+                    "React Native",
+                    "NodeJS",
+                    "FastAPI",
+                    "Git"
+                ],
+                "knowsLanguage": [
+                    {
+                        "@type": "Language",
+                        "name": "Azerbaijani",
+                        "alternateName": "az"
+                    },
+                    {
+                        "@type": "Language",
+                        "name": "English",
+                        "alternateName": "en",
+                        "proficiencyLevel": "C1"
+                    },
+                    {
+                        "@type": "Language",
+                        "name": "Russian",
+                        "alternateName": "ru",
+                        "proficiencyLevel": "A2"
+                    }
+                ]
+            }
+        </script>
+
+        <style>
+            @page {
+                size: A4;
+                margin: 0.5in;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family:
+                    Arial,
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    sans-serif;
+                font-size: 10.5pt;
+                line-height: 1.4;
+                color: #000;
+                background: white;
+            }
+
+            .resume {
+                max-width: 8.5in;
+                margin: 0 auto;
+                padding: 0.5in;
+            }
+
+            /* Header */
+            .header {
+                text-align: center;
+                margin-bottom: 16pt;
+            }
+
+            .header h1 {
+                font-size: 22pt;
+                font-weight: 600;
+                margin-bottom: 4pt;
+                letter-spacing: 0.5pt;
+            }
+
+            .contact-info {
+                font-style: normal;
+                font-size: 10.5pt;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 0;
+            }
+
+            .contact-info span:not(:last-child)::after {
+                content: " | ";
+                margin: 0 3pt;
+            }
+
+            a {
+                color: #5ca6e4;
+                text-decoration: none;
+            }
+
+            abbr {
+                text-decoration: none;
+                border-bottom: none;
+            }
+
+            /* Section Styling */
+            section {
+                margin-bottom: 20pt;
+            }
+
+            h2 {
+                font-size: 11pt;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #568bba;
+                border-bottom: 1.5px solid #568bba;
+                padding-bottom: 2pt;
+                margin-bottom: 6pt;
+                letter-spacing: 0.3pt;
+            }
+
+            h3 {
+                font-size: 11pt;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            h4 {
+                font-size: 11pt;
+                font-weight: bold;
+                font-style: normal;
+                margin: 0;
+            }
+
+            /* Entry Layout */
+            .entry {
+                margin-bottom: 16pt;
+            }
+
+            .entry:last-child {
+                margin-bottom: 0;
+            }
+
+            .entry-left {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .entry-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .entry-right {
+                text-align: right;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+            .entry-subheader {
+                margin-top: 0;
+            }
+
+            .date {
+                font-size: 10.5pt;
+            }
+
+            .date-range {
+                text-align: right;
+                margin-top: 1pt;
+            }
+
+            .location {
+                text-align: right;
+                font-size: 10.5pt;
+            }
+
+            .institution {
+                text-transform: uppercase;
+            }
+
+            /* Lists */
+            ul {
+                margin-left: 16pt;
+                margin-top: 3pt;
+            }
+
+            li {
+                margin-bottom: 2pt;
+                text-align: justify;
+            }
+
+            /* Skills Section */
+            .skills-grid {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 2pt 8pt;
+                font-size: 10.5pt;
+            }
+
+            .skills-grid dt {
+                font-weight: bold;
+            }
+
+            .skills-grid dd {
+                margin: 0;
+            }
+
+            /* Languages */
+            .languages {
+                font-size: 10.5pt;
+            }
+
+            /* Projects */
+            .project-tech {
+                font-size: 9pt;
+                margin-top: 1pt;
+            }
+
+            /* Awards */
+            .award-org {
+                font-weight: normal;
+                text-transform: none;
+            }
+
+            /* Print Styles */
+            @media print {
+                body {
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                }
+
+                .resume {
+                    padding: 0;
+                    max-width: none;
+                }
+
+                a {
+                    text-decoration: underline;
+                    color: #5ca6e4;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="resume" role="main">
+            <header class="header" role="banner">
+                <h1 itemprop="name">Ahmad Jafarov</h1>
+                <address
+                    class="contact-info"
+                    itemprop="contactPoint"
+                    itemscope
+                    itemtype="https://schema.org/ContactPoint"
+                >
+                    <span
+                        itemprop="address"
+                        itemscope
+                        itemtype="https://schema.org/PostalAddress"
+                    >
+                        <span itemprop="addressLocality">Baku</span>
+                        <span itemprop="addressCountry">Azerbaijan</span>
+                    </span>
+                    <span itemscope itemtype="https://schema.org/ContactPoint">
+                        <a
+                            href="mailto:ahmadjafarov02@gmail.com"
+                            itemprop="email"
+                            >ahmadjafarov02@gmail.com</a
+                        >
+                    </span>
+                    <span>
+                        <a
+                            href="https://ahmadjaf.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            itemprop="url"
+                            >Website</a
+                        >
+                    </span>
+                    <span>
+                        <a
+                            href="https://www.linkedin.com/in/ahmad-jafarov-221734190/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            itemprop="sameAs"
+                            >LinkedIn</a
+                        >
+                    </span>
+                    <span>
+                        <a
+                            href="https://github.com/Ahm3tJ4f"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            itemprop="sameAs"
+                            >GitHub</a
+                        >
+                    </span>
+                </address>
+            </header>
+
+            <section
+                aria-labelledby="education-heading"
+                itemscope
+                itemtype="https://schema.org/EducationEvent"
+            >
+                <h2 id="education-heading">Education</h2>
+
+                <article
+                    class="entry"
+                    itemprop="alumniOf"
+                    itemscope
+                    itemtype="https://schema.org/EducationalOccupationalCredential"
+                >
+                    <div class="entry-header">
+                        <div class="entry-left">
+                            <h3
+                                class="institution"
+                                itemprop="credentialCategory"
+                                content="bachelorDegree"
+                            >
+                                <span itemprop="name"
+                                    >Azerbaijan State Oil and Industry
+                                    University</span
+                                >
+                            </h3>
+                            <div class="entry-subheader">
+                                <span>
+                                    <strong>
+                                        <abbr title="Bachelor of Science"
+                                            >B.S.</abbr
+                                        >,
+                                        <span itemprop="educationalLevel"
+                                            >Computer Engineering</span
+                                        >
+                                    </strong>
+                                    - GPA:
+                                    <data value="91.5" itemprop="grade"
+                                        >91.5</data
+                                    >/100
+                                </span>
+                            </div>
+                        </div>
+                        <div class="entry-right">
+                            <span class="location">Baku, Azerbaijan</span>
+                            <div class="date-range">
+                                <time
+                                    class="date"
+                                    itemprop="startDate"
+                                    datetime="2019-09"
+                                    >Sep 2019</time
+                                >
+                                <span> - </span>
+                                <time
+                                    class="date"
+                                    itemprop="endDate"
+                                    datetime="2023-06"
+                                    >Jun 2023</time
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            Graduated from the Joint
+                            <cite
+                                >"Collaboration Program to Develop the Bachelors
+                                of Emerging Technologies"</cite
+                            >
+                            between Siegen University (Germany) and
+                            <abbr
+                                title="Azerbaijan State Oil and Industry University"
+                                >ASOIU</abbr
+                            >
+                        </li>
+                        <li>
+                            Entrance score: <data value="640">640</data>/700.
+                            Graduation project: supervised data mining
+                            algorithms for online education
+                        </li>
+                        <li>
+                            <strong>Relevant coursework:</strong>
+                            <em
+                                >Artificial Intelligence, Data Structures and
+                                Database Systems, Object Oriented Design and
+                                Programming, Web Programming and Design</em
+                            >
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section aria-labelledby="experience-heading">
+                <h2 id="experience-heading">Experience</h2>
+
+                <article
+                    class="entry"
+                    itemscope
+                    itemtype="https://schema.org/JobPosting"
+                >
+                    <meta itemprop="datePosted" content="2023-08-01" />
+                    <div class="entry-header">
+                        <div class="entry-left">
+                            <h3
+                                itemprop="hiringOrganization"
+                                itemscope
+                                itemtype="https://schema.org/Organization"
+                            >
+                                <span itemprop="name">Ferrum Capital</span>
+                            </h3>
+                            <div class="entry-subheader">
+                                <h4 itemprop="title">Front-End Developer</h4>
+                            </div>
+                        </div>
+                        <div class="entry-right">
+                            <span
+                                class="location"
+                                itemprop="jobLocation"
+                                itemscope
+                                itemtype="https://schema.org/Place"
+                            >
+                                <span
+                                    itemprop="address"
+                                    itemscope
+                                    itemtype="https://schema.org/PostalAddress"
+                                >
+                                    <span itemprop="addressLocality">Baku</span
+                                    >,
+                                    <span itemprop="addressCountry"
+                                        >Azerbaijan</span
+                                    >
+                                </span>
+                            </span>
+                            <div class="date-range">
+                                <time
+                                    class="date"
+                                    itemprop="startDate"
+                                    datetime="2023-08"
+                                    >Aug 2023</time
+                                >
+                                <span> - </span>
+                                <time
+                                    class="date"
+                                    itemprop="endDate"
+                                    datetime="2025-04"
+                                    >Present</time
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <ul itemprop="description">
+                        <li>
+                            Led frontend development on internal systems (<abbr
+                                title="Customer Relationship Management"
+                                >CRM</abbr
+                            >s,
+                            <abbr title="Enterprise Resource Planning"
+                                >ERP</abbr
+                            >
+                            tools) and public mobile applications, taking
+                            projects from architecture to delivery
+                        </li>
+                        <li>
+                            Documented technical specifications,
+                            <abbr title="Application Programming Interface"
+                                >API</abbr
+                            >
+                            integrations, and architectural decisions for all
+                            frontend projects
+                        </li>
+                        <li>
+                            Conducted code reviews, established coding
+                            standards, and implemented best practices for code
+                            quality
+                        </li>
+                        <li>
+                            Managed workloads and coordinated between
+                            developers, aligned with backend teams for seamless
+                            integration
+                        </li>
+                        <li>
+                            Executed
+                            <abbr
+                                title="Continuous Integration/Continuous Deployment"
+                                >CI/CD</abbr
+                            >
+                            pipelines for automated testing and deployment
+                            workflows, reducing deployment time by 60%
+                        </li>
+                    </ul>
+                </article>
+
+                <article
+                    class="entry"
+                    itemscope
+                    itemtype="https://schema.org/JobPosting"
+                >
+                    <meta itemprop="datePosted" content="2024-03-01" />
+                    <div class="entry-header">
+                        <div class="entry-left">
+                            <h3
+                                itemprop="hiringOrganization"
+                                itemscope
+                                itemtype="https://schema.org/Organization"
+                            >
+                                <span itemprop="name">InnoSight LLC</span>
+                            </h3>
+                            <div class="entry-subheader">
+                                <h4 itemprop="title">Software Developer</h4>
+                            </div>
+                        </div>
+                        <div class="entry-right">
+                            <span
+                                class="location"
+                                itemprop="jobLocation"
+                                itemscope
+                                itemtype="https://schema.org/Place"
+                            >
+                                <span
+                                    itemprop="address"
+                                    itemscope
+                                    itemtype="https://schema.org/PostalAddress"
+                                >
+                                    <span itemprop="addressLocality">Baku</span
+                                    >,
+                                    <span itemprop="addressCountry"
+                                        >Azerbaijan</span
+                                    >
+                                </span>
+                            </span>
+                            <div class="date-range">
+                                <time
+                                    class="date"
+                                    itemprop="startDate"
+                                    datetime="2024-03"
+                                    >Mar 2024</time
+                                >
+                                <span> - </span>
+                                <time
+                                    class="date"
+                                    itemprop="endDate"
+                                    datetime="2025-04"
+                                    >Apr 2025</time
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <ul itemprop="description">
+                        <li>
+                            Built the frontend of an internal office room
+                            booking system with a Google Calendar–like
+                            <abbr title="User Interface">UI</abbr> and an admin
+                            panel for employee management using
+                            <abbr title="Next.js 14">Next.js 14</abbr>, server
+                            actions, React Hook Form, and
+                            <abbr title="Zod">Zod</abbr> for server/client
+                            validation
+                        </li>
+                        <li>
+                            Planned and built a
+                            <abbr title="Customer Relationship Management"
+                                >CRM</abbr
+                            >
+                            platform for citizen onboarding with integrated
+                            video calls and browser/backend-level face detection
+                            for identity verification
+                        </li>
+                        <li>
+                            Created <abbr title="Swift">Swift</abbr> and
+                            <abbr title="Kotlin">Kotlin</abbr>
+                            <abbr title="Software Development Kit">SDK</abbr>s
+                            enabling face liveness detection; utilized
+                            <abbr title="FastAPI">FastAPI</abbr> backend with
+                            Google MediaPipe and authenticated
+                            <abbr title="WebSocket">WebSocket</abbr> connection
+                            for real-time active liveness verification
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section aria-labelledby="projects-heading">
+                <h2 id="projects-heading">Projects</h2>
+
+                <article
+                    class="entry"
+                    itemscope
+                    itemtype="https://schema.org/SoftwareSourceCode"
+                >
+                    <meta
+                        itemprop="programmingLanguage"
+                        content="Next.js, TypeScript"
+                    />
+                    <div class="entry-header">
+                        <h4>
+                            4YOU
+                            <a
+                                href="https://4youcare.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="font-weight: normal"
+                                >Website</a
+                            >
+                            <meta itemprop="name" content="4YOU" />
+                        </h4>
+                    </div>
+                    <p class="project-tech">
+                        <span itemprop="codeRepository">Next.js 15</span>,
+                        <span itemprop="programmingLanguage">TypeScript</span>,
+                        Server Actions,
+                        <span itemprop="softwareRequirements">Zod</span>,
+                        shadcn/ui, TailwindCSS, Docker
+                    </p>
+                    <ul>
+                        <li>
+                            Mental health platform supporting
+                            <data value="30">30+</data> partner psychologists
+                            and <data value="400">400+</data> active customers
+                        </li>
+                        <li>
+                            Executed Server Actions as type-safe
+                            <abbr title="Remote Procedure Call">RPC</abbr>;
+                            utilized end-to-end validation with Zod schemas
+                            shared between client forms and server actions
+                        </li>
+                        <li>
+                            Created custom design system with shadcn/ui
+                            components and TailwindCSS; architected reusable
+                            component library with Radix UI primitives
+                        </li>
+                        <li>
+                            Applied
+                            <abbr title="JSON Web Token">JWT</abbr> token
+                            rotation via Edge middleware; automatic refresh on
+                            401 responses without client-side complexity;
+                            <abbr title="HTTP-Only">HTTP-only</abbr>
+                            cookie-based session storage
+                        </li>
+                        <li>
+                            Architected server-first data fetching with
+                            streaming; reduced client bundle by ~40% by
+                            hydrating only interactive islands; implemented
+                            role-based route protection at edge
+                        </li>
+                    </ul>
+                </article>
+
+                <article
+                    class="entry"
+                    itemscope
+                    itemtype="https://schema.org/SoftwareSourceCode"
+                >
+                    <meta
+                        itemprop="programmingLanguage"
+                        content="React Native, TypeScript"
+                    />
+                    <div class="entry-header">
+                        <h4>
+                            Ferrum Capital Mobile
+                            <a
+                                href="https://apps.apple.com/az/app/ferrum-capital/id6741802393"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="font-weight: normal"
+                                >App Store</a
+                            >
+                            <meta
+                                itemprop="name"
+                                content="Ferrum Capital Mobile"
+                            />
+                        </h4>
+                    </div>
+                    <p class="project-tech">
+                        <span itemprop="codeRepository"
+                            >React Native (Expo)</span
+                        >, Expo Modules,
+                        <span itemprop="programmingLanguage">TypeScript</span>,
+                        TanStack React Query, React Hook Form,
+                        <span itemprop="softwareRequirements">Zod</span>
+                    </p>
+                    <ul>
+                        <li>
+                            Mobile factoring app serving
+                            <data value="100000">100,000+</data> active users
+                        </li>
+                        <li>
+                            Organized and implemented full-stack
+                            <abbr
+                                title="Secure Identification Management and Authentication"
+                                >SIMA</abbr
+                            >
+                            citizen certificate authentication (frontend +
+                            backend) with
+                            <abbr title="X.509">X.509</abbr> certificate
+                            parsing,
+                            <abbr title="RSA-SHA256">RSA-SHA256</abbr> signature
+                            verification, and cryptographic challenge-response
+                            flow
+                        </li>
+                        <li>
+                            Applied multi-module architecture for obligations,
+                            factoring, and video-meetings; implemented push
+                            notifications via
+                            <abbr title="Firebase Cloud Messaging">FCM</abbr>,
+                            React Hook Form + Zod validation, and offline
+                            capabilities with TanStack React Query caching
+                        </li>
+                    </ul>
+                </article>
+
+                <article
+                    class="entry"
+                    itemscope
+                    itemtype="https://schema.org/SoftwareSourceCode"
+                >
+                    <meta
+                        itemprop="programmingLanguage"
+                        content="React, TypeScript"
+                    />
+                    <meta
+                        itemprop="codeRepository"
+                        content="https://github.com/Ahm3tJ4f/codemark"
+                    />
+                    <div class="entry-header">
+                        <h4>
+                            CodeMark
+                            <a
+                                href="https://github.com/Ahm3tJ4f/codemark"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="font-weight: normal"
+                                >GitHub</a
+                            >
+                            <meta itemprop="name" content="CodeMark" />
+                        </h4>
+                    </div>
+                    <p class="project-tech">
+                        React,
+                        <span itemprop="programmingLanguage">TypeScript</span>,
+                        <span itemprop="softwareRequirements">esbuild</span>,
+                        WebAssembly
+                    </p>
+                    <ul>
+                        <li>
+                            Jupyter-like notebook for JavaScript/React with live
+                            in-browser code execution
+                        </li>
+                        <li>
+                            Applied browser-based bundling using esbuild-<abbr
+                                title="WebAssembly"
+                                >WASM</abbr
+                            >
+                            with dynamic npm package resolution and IndexedDB
+                            caching
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section aria-labelledby="activities-heading">
+                <h2 id="activities-heading">Leadership & Activities</h2>
+
+                <article
+                    class="entry"
+                    itemscope
+                    itemtype="https://schema.org/EducationEvent"
+                >
+                    <div class="entry-header">
+                        <h3>
+                            <span itemprop="award">"Elachi" Scholarship</span> —
+                            <cite
+                                class="award-org"
+                                itemprop="organizer"
+                                itemscope
+                                itemtype="https://schema.org/Organization"
+                            >
+                                <span itemprop="name">PASHA Holding</span>
+                            </cite>
+                        </h3>
+                        <time class="date" itemprop="date" datetime="2022-10"
+                            >Oct 2022</time
+                        >
+                    </div>
+                    <ul>
+                        <li>
+                            Awarded a 1-year scholarship for academic excellence
+                            and extra-curricular activities
+                        </li>
+                        <li>
+                            Organized and conducted a 1-month Python training
+                            program for other scholarship holders
+                        </li>
+                    </ul>
+                </article>
+
+                <article
+                    class="entry"
+                    itemscope
+                    itemtype="https://schema.org/Event"
+                >
+                    <meta itemprop="eventType" content="Volunteer" />
+                    <div class="entry-header">
+                        <h3>
+                            <span itemprop="name">Volunteer</span> —
+                            <cite
+                                class="award-org"
+                                itemprop="organizer"
+                                itemscope
+                                itemtype="https://schema.org/Organization"
+                            >
+                                <span itemprop="name">Formula 1, FIA</span>
+                            </cite>
+                        </h3>
+                        <time
+                            class="date"
+                            itemprop="startDate"
+                            datetime="2022-06"
+                            >Jun 2022</time
+                        >
+                    </div>
+                    <ul>
+                        <li>
+                            Volunteer and supervisor assistant of the
+                            <abbr title="Baku City Circuit">BCC</abbr>;
+                            communicated with foreign guests and managed
+                            time/zone positions of Crowd Management
+                            <abbr title="Team Member">TM</abbr> for 3 regions
+                            within the city
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Skills & Interests</h2>
+
+                <dl class="skills-grid">
+                    <dt>Technical:</dt>
+                    <dd
+                        itemprop="knowsAbout"
+                        itemscope
+                        itemtype="https://schema.org/DefinedTerm"
+                    >
+                        <span itemprop="name">JavaScript</span>,
+                        <span itemprop="name">TypeScript</span>,
+                        <span itemprop="name">Golang</span>,
+                        <span itemprop="name">Git</span>,
+                        <span itemprop="name">ReactJS</span>,
+                        <span itemprop="name">NextJS</span>,
+                        <span itemprop="name">React Native</span>,
+                        <span itemprop="name">NodeJS</span>,
+                        <span itemprop="name">FastAPI</span>
+                    </dd>
+
+                    <dt>Languages:</dt>
+                    <dd
+                        itemprop="knowsLanguage"
+                        itemscope
+                        itemtype="https://schema.org/Language"
+                    >
+                        <span itemprop="name">Azerbaijani</span> (native),
+                        <span itemprop="name">English</span> (<abbr
+                            title="Common European Framework of Reference Level C1"
+                            >C1</abbr
+                        >
+                        -
+                        <a
+                            href="https://ahmadjaf.com/ahmad-jaf-ielts.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >IELTS <data value="8.0">8.0</data></a
+                        >), <span itemprop="name">Russian</span> (<abbr
+                            title="Common European Framework of Reference Level A2"
+                            >A2</abbr
+                        >)
+                    </dd>
+
+                    <dt>Interests:</dt>
+                    <dd itemprop="keywords">
+                        Hiking, Camping, Brazilian Jiu-Jitsu, Playing Guitar,
+                        Reading
+                    </dd>
+                </dl>
+            </section>
+        </main>
+    </body>
+</html>
