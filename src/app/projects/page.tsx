@@ -55,7 +55,7 @@ export default function Projects() {
                     title={project.github}
                   >
                     <Image
-                      className="text-red-500"
+                      className="dark:invert"
                       src="/github.svg"
                       alt="GitHub"
                       width={18}

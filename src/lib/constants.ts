@@ -1,5 +1,5 @@
 export const ExternalLinks = {
-  FerrumCapital: "https://www.ferrumcapital.az/az",
+  FerrumCapital: "https://www.ferrumcapital.az",
   FerrumCapitalCustomerApp:
     "https://apps.apple.com/az/app/ferrum-capital/id6741802393",
   FerrumCapitalBusinessApp:

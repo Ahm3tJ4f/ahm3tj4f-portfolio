@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { ASCII_WAVE_CONFIG as BASE_CONFIG } from "@/lib/constants";
 import { getDeviceFingerprint } from "@/lib/utils";
+import { useTheme } from "@/context/theme-context";
 
 const fingerprint = getDeviceFingerprint();
 
@@ -16,11 +17,15 @@ const random = () => {
 
 const range = (min: number, max: number) => min + random() * (max - min);
 
-const shuffledColors = [...BASE_CONFIG.colors].sort(() => random() - 0.5);
+// Light mode colors (original)
+const lightColors = [...BASE_CONFIG.colors].sort(() => random() - 0.5);
+
+// Dark mode colors - brighter, more visible on dark background
+const darkColors = ["#888888", "#aaaaaa", "#cccccc", "#ffffff"].sort(() => random() - 0.5);
 
 const config = {
   ...BASE_CONFIG,
-  colors: shuffledColors,
+  colors: lightColors,
   wave1: { x: BASE_CONFIG.wave1.x + range(-0.05, 0.05) },
   wave2: {
     y: BASE_CONFIG.wave2.y + range(-0.05, 0.05),
@@ -36,6 +41,7 @@ const config = {
 
 export function AsciiWave() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -46,6 +52,9 @@ export function AsciiWave() {
 
     let frameId: number;
     let time = 0;
+    
+    // Select colors based on theme
+    const currentColors = resolvedTheme === "dark" ? darkColors : config.colors;
 
     const resize = () => {
       const parent = canvas.parentElement;
@@ -67,7 +76,6 @@ export function AsciiWave() {
       if (!ctx || !canvas) return;
 
       const {
-        colors,
         chars,
         fontSize,
         fontFamily,
@@ -117,10 +125,10 @@ export function AsciiWave() {
             }
 
             const colorIndex = Math.floor(
-              ((xNorm + yNorm + norm) * colorCycleRate) % colors.length
+              ((xNorm + yNorm + norm) * colorCycleRate) % currentColors.length
             );
 
-            ctx.fillStyle = colors[colorIndex];
+            ctx.fillStyle = currentColors[colorIndex];
             ctx.fillText(char, x * charWidth, y * fontSize);
             continue;
           }
@@ -128,10 +136,10 @@ export function AsciiWave() {
           if (norm > threshold) {
             const charIndex = Math.floor(norm * (chars.length - 1));
             const colorIndex = Math.floor(
-              ((xNorm + yNorm + norm) * colorCycleRate) % colors.length
+              ((xNorm + yNorm + norm) * colorCycleRate) % currentColors.length
             );
 
-            ctx.fillStyle = colors[colorIndex];
+            ctx.fillStyle = currentColors[colorIndex];
             ctx.fillText(chars[charIndex], x * charWidth, y * fontSize);
           }
         }
@@ -149,7 +157,7 @@ export function AsciiWave() {
       window.removeEventListener("resize", resize);
       cancelAnimationFrame(frameId);
     };
-  }, []);
+  }, [resolvedTheme]);
 
   return <canvas ref={canvasRef} className="block" role="img" aria-label="Animated ASCII wave showing colorful character patterns" />;
 }
