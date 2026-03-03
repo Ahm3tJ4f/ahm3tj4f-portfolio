@@ -1,11 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Link2 as LinkIcon } from "lucide-react";
 import { projects } from "@/data/projects";
 
+export const metadata: Metadata = {
+  title: "Projects | Ahmad Jafarov",
+  description: "Portfolio of web and mobile applications built with React Native, Next.js, FastAPI. Projects include mobile apps with 100,000+ users, CRMs, and real-time systems.",
+  openGraph: {
+    title: "Projects | Ahmad Jafarov",
+    description: "Portfolio of web and mobile applications built with React Native, Next.js, FastAPI. Projects include mobile apps with 100,000+ users, CRMs, and real-time systems.",
+  },
+};
+
 export default function Projects() {
   return (
-    <main className="flex flex-col gap-12">
+    <div className="flex flex-col gap-12">
       <header>
         <h1 className="halftone-accent halftone-heading inline-block text-5xl md:text-7xl font-bold tracking-tight mb-4">
           Projects
@@ -84,6 +94,6 @@ export default function Projects() {
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 }

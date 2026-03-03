@@ -1,0 +1,143 @@
+# Ahmad Jafarov - Full-stack / React Native Engineer
+
+Full-stack / React Native Engineer specializing in TypeScript, React Native, Expo, and Nest.js. Building mobile apps and web systems from Baku, Azerbaijan. Open to remote work and global clients.
+
+**Contact**
+
+- **Name**: Ahmad Jafarov
+- **Role**: Lead Frontend Developer / Full-stack Engineer
+- **Location**: Baku, Azerbaijan
+- **Email**: ahmadjafarov02@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/ahmad-jafarov-221734190/
+- **GitHub**: https://github.com/ahm3tj4f
+- **Years of Experience**: 2+
+- **Open to**: Remote work, global clients, full-time and contract opportunities
+
+**Tech Stack**
+
+- **Frontend**: TypeScript, React Native (Expo), Next.js, React
+- **Backend**: FastAPI, Nest.js (learning), Go (learning)
+- **Mobile**: React Native, Expo Modules, Expo Router
+- **State Management**: TanStack React Query, React Hook Form, Zod
+- **UI/Styling**: shadcn/ui, TailwindCSS, Radix UI
+- **Database**: PostgreSQL, Redis
+- **DevOps**: Docker, CI/CD pipelines
+- **Authentication**: JWT, X.509 certificates, SIMA citizen certificates
+- **Other**: WebAssembly (esbuild), Firebase Cloud Messaging, MediaPipe, WebSockets
+
+**Core Skills**
+
+- Mobile app development with 100,000+ user scale
+- Full-stack architecture and implementation
+- Type-safe API design with Zod validation
+- X.509 certificate parsing and RSA-SHA256 signature verification
+- Real-time features (WebSockets, video meetings, push notifications)
+- Offline-first mobile architecture
+- Accessibility and usability-focused product development
+- Team leadership and code review
+- CI/CD pipeline implementation
+
+---
+
+## Projects
+
+### Song Pal Bot
+
+Telegram bot enabling two users to share music and track listening habits. Features unique pairing codes, automatic link detection (Spotify/YouTube), click tracking, and scheduled reminder notifications.
+
+**Tech Stack**: FastAPI, PostgreSQL, aiogram, Docker, Alembic  
+**GitHub**: https://github.com/Ahm3tJ4f/song-pal-bot  
+**Live**: https://t.me/songpal_bot
+
+### PixelPro CRM
+
+Full-stack CRM with FastAPI backend and Next.js 15 frontend. Features citizen data integration (ASAN), Jitsi video meetings, and JWT authentication.
+
+**Tech Stack**: FastAPI, Redis, Docker, PostgreSQL, Next.js 15  
+**GitHub**: https://github.com/Ahm3tJ4f/pixelpro-crm
+
+### Ferrum Capital Mobile
+
+Mobile factoring app with 100,000+ active users. Designed and implemented full-stack SIMA citizen certificate authentication with X.509 certificate parsing and RSA-SHA256 signature verification. Developed multi-module architecture for obligations, factoring, and video-meetings with Firebase Cloud Messaging push notifications and offline capabilities.
+
+**Tech Stack**: React Native (Expo), Expo Modules, TypeScript, TanStack React Query, React Hook Form, Zod  
+**App Store**: https://apps.apple.com/az/app/ferrum-capital/id6741802393
+
+### 4YOU
+
+Mental health platform with 30+ partner psychologists and 400+ active customers. Built with Server Actions as type-safe RPC and end-to-end validation with Zod schemas. Custom design system with shadcn/ui components and TailwindCSS. Implemented JWT token rotation via Edge middleware with automatic refresh on 401 responses and HTTP-only cookie-based session storage.
+
+**Tech Stack**: Next.js 15, TypeScript, Server Actions, Zod, shadcn/ui, TailwindCSS, Docker  
+**Live**: https://4youcare.com/
+
+### CodeMark
+
+Jupyter-like notebook for JavaScript/React with live in-browser code execution using esbuild-WASM. Built during undergraduate studies to help friends prepare for exams. This project demonstrated the importance of building tools that genuinely help people and solidified my commitment to accessibility and usability.
+
+**Tech Stack**: React, TypeScript, esbuild, WebAssembly  
+**GitHub**: https://github.com/Ahm3tJ4f/codemark  
+**Demo**: https://ahm3tj4f.github.io/codemark/
+
+---
+
+## Professional Experience
+
+### Lead Frontend Developer - Ferrum Capital
+
+**Location**: Baku, Azerbaijan  
+**Period**: August 2023 - Present  
+**Website**: https://www.ferrumcapital.az
+
+Leading frontend development on internal systems (CRMs, ERP tools) and public mobile applications, taking projects from architecture to delivery. Documented technical specifications, API integrations, and architectural decisions for all frontend projects. Conducted code reviews, established coding standards, and implemented best practices for code quality. Managed workloads and coordinated between developers, aligned with backend teams for seamless integration. Implemented CI/CD pipelines for automated testing and deployment workflows.
+
+**Key Achievements**:
+- Built mobile factoring app serving 100,000+ active users
+- Implemented full-stack SIMA citizen certificate authentication with X.509 certificate parsing and RSA-SHA256 signature verification
+- Developed multi-module architecture for complex business operations
+- Integrated Firebase Cloud Messaging for push notifications
+- Built offline-first capabilities for critical app features
+
+### Software Developer - InnoSight LLC
+
+**Location**: Baku, Azerbaijan  
+**Period**: March 2024 - April 2025  
+**Website**: https://www.linkedin.com/company/innosight-llc/
+
+Developed the frontend of an internal office room booking system with a Google Calendar-like UI and an admin panel for employee management using Next.js 14, server actions, React Hook Form, and Zod for server/client validation. Designed and implemented a CRM platform for citizen onboarding with integrated video calls and browser/backend-level face detection for identity verification. Built Swift and Kotlin SDKs for face liveness detection; implemented FastAPI backend with Google MediaPipe and authenticated WebSocket connection for real-time active liveness verification.
+
+**Key Achievements**:
+- Built room booking system with Next.js 14 and Server Actions
+- Created CRM with integrated Jitsi video meetings
+- Implemented face detection for identity verification
+- Built native SDKs for iOS and Android face liveness detection
+- Developed real-time WebSocket-based verification system with MediaPipe
+
+---
+
+## Philosophy & Approach
+
+I'm obsessed with understanding how things work under the hood. Grasping the intuition behind concepts (shoutout to 3Blue1Brown) made me better at implementation. But I'm realistic—sometimes I have to trust the abstraction, otherwise I'd never ship anything.
+
+I try to build tools that genuinely help people. I remember when I was an undergraduate student, I built a website that executed React code and let users take markdown notes (Jupyter Notebook-style). Watching my friends actually use it to prepare for exams showed me technology is most meaningful when it makes someone's life easier. Experiences like that also taught me how much perspective matters: it only takes seeing one person struggling with any kind of software to understand the real-world importance of accessibility and usability. That's why I invest deeply in building products that are both usable and inclusive, ensuring people of all abilities can benefit from the tools I create.
+
+---
+
+## Personal
+
+In my spare time, I'm usually hanging out with my cat, playing guitar (my neighbors definitely love it), training Brazilian Jiu-Jitsu, and adding books to my Goodreads "to-read" list to pretend I'm actually going to read them.
+
+**Links**:
+- Guitar covers on TikTok: https://www.tiktok.com/@ahm3tj4f/video/7519449555486690568
+- Goodreads profile: https://www.goodreads.com/user/show/63307480-ahmad-jafarov
+- 3Blue1Brown (math education): https://www.3blue1brown.com/
+
+---
+
+## Availability
+
+**Status**: Open to remote work and global clients  
+**Preferred arrangements**: Full-time, contract, freelance  
+**Location**: Baku, Azerbaijan (remote-friendly)  
+**Timezone**: UTC+4 (AZT), flexible for global collaboration
+
+I am currently based in Baku, Azerbaijan and actively seeking remote opportunities with global clients. My experience working with distributed teams and implementing CI/CD pipelines makes me well-suited for remote collaboration. I have successfully delivered projects for clients while working remotely and am comfortable with asynchronous communication and across different time zones.

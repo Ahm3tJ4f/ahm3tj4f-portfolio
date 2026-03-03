@@ -1,12 +1,73 @@
 import dayjs from "dayjs";
+import Script from "next/script";
+import type { Metadata } from "next";
 import { ExternalLinks } from "@/lib/constants";
 import { ExternalLink } from "@/components/ui/external-link";
 import { AsciiWave } from "@/components/ascii-wave";
+
+export const metadata: Metadata = {
+  title: "Ahmad Jafarov",
+  description: "Full-stack / React Native Developer with 3+ years of expertise in web and mobile applications. Built multiple projects serving 100,000+ users. Baku-based, globally available. Open to both international and local projects.",
+  openGraph: {
+    title: "Ahmad Jafarov",
+    description: "Full-stack / React Native Developer with 3+ years of expertise in web and mobile applications. Built multiple projects serving 100,000+ users. Baku-based, globally available. Open to both international and local projects.",
+  },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ahmad Jafarov",
+  "jobTitle": "Lead Frontend Developer / Full-stack Engineer",
+  "url": "https://ahmadjafarov.com",
+  "sameAs": [
+    "https://github.com/ahm3tj4f",
+    "https://www.linkedin.com/in/ahmad-jafarov-221734190/",
+  ],
+  "knowsAbout": [
+    "TypeScript",
+    "React Native",
+    "Expo",
+    "Next.js",
+    "React",
+    "FastAPI",
+    "Nest.js",
+    "Go",
+    "PostgreSQL",
+    "Redis",
+    "Docker",
+    "Zod",
+    "TanStack Query",
+    "React Hook Form",
+    "shadcn/ui",
+    "TailwindCSS",
+    "Mobile App Development",
+    "Full-stack Engineering",
+    "CI/CD",
+    "X.509 Certificate Authentication",
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Baku",
+    "addressCountry": "Azerbaijan",
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Ferrum Capital",
+    "url": "https://www.ferrumcapital.az",
+  },
+};
 
 export default function HomeComponent() {
   const yearsOfExperience = dayjs().year() - 2022;
 
   return (
+    <>
+      <Script
+        id="person-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
     <div className="flex flex-col gap-16 md:gap-16">
       <section className="space-y-5 md:space-y-6" aria-labelledby="about-heading">
         <h1 id="about-heading" className="halftone-accent halftone-heading inline-block text-6xl md:text-7xl font-bold">
@@ -91,5 +152,6 @@ export default function HomeComponent() {
         </p>
       </section>
     </div>
+    </>
   );
 }

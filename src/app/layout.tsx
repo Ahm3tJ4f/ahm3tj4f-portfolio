@@ -6,8 +6,23 @@ import "@/styles/globals.css";
 import HackWarning from "@/components/hack-warning";
 
 export const metadata: Metadata = {
-  title: "Ahmad Jafarov - Portfolio",
-  description: "Software Developer Portfolio",
+  title: "Ahmad Jafarov",
+  description: "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
+  keywords: ["frontend developer", "react native", "full-stack engineer", "typescript", "expo", "next.js", "baku", "azerbaijan"],
+  authors: [{ name: "Ahmad Jafarov" }],
+  creator: "Ahmad Jafarov",
+  openGraph: {
+    title: "Ahmad Jafarov",
+    description: "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Ahmad Jafarov",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ahmad Jafarov",
+    description: "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
+  },
 };
 
 export default function RootLayout({
