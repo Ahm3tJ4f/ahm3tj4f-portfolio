@@ -7,34 +7,36 @@ import "@/styles/globals.css";
 import HackWarning from "@/components/hack-warning";
 
 export const metadata: Metadata = {
-  title: "Ahmad Jafarov",
+  title: "Ahmad Jafarov | Frontend Developer (React, React Native)",
   description:
-    "Full-stack Developer with 3+ years of expertise, specializing in web and mobile applications. ",
+    "Frontend Developer specializing in React & React Native web and mobile apps. 3+ years experience building for 100K+ users. Based in Baku, available globally.",
   keywords: [
     "frontend developer",
     "react native",
-    "full-stack engineer",
+    "react",
     "typescript",
     "expo",
     "next.js",
     "baku",
     "azerbaijan",
+    "mobile apps",
+    "web development",
   ],
   authors: [{ name: "Ahmad Jafarov" }],
   creator: "Ahmad Jafarov",
   openGraph: {
-    title: "Ahmad Jafarov",
+    title: "Ahmad Jafarov | Frontend Developer (React, React Native)",
     description:
-      "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
+      "Frontend Developer specializing in React & React Native web and mobile apps. 3+ years experience building for 100K+ users. Based in Baku, available globally.",
     type: "website",
     locale: "en_US",
     siteName: "Ahmad Jafarov",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ahmad Jafarov",
+    title: "Ahmad Jafarov | Frontend Developer (React, React Native)",
     description:
-      "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
+      "Frontend Developer specializing in React & React Native web and mobile apps. 3+ years experience building for 100K+ users. Based in Baku, available globally.",
   },
 };
 

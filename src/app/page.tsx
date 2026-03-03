@@ -6,11 +6,11 @@ import { ExternalLink } from "@/components/ui/external-link";
 import { AsciiWave } from "@/components/ascii-wave";
 
 export const metadata: Metadata = {
-  title: "Ahmad Jafarov",
-  description: "Full-stack / React Native Developer with 3+ years of expertise in web and mobile applications. Built multiple projects serving 100,000+ users. Baku-based, globally available. Open to both international and local projects.",
+  title: "Ahmad Jafarov | Frontend Developer (React, React Native) | Baku",
+  description: "Frontend Developer specializing in React & React Native web and mobile apps. 3+ years experience building for 100K+ users. Based in Baku, available globally.",
   openGraph: {
-    title: "Ahmad Jafarov",
-    description: "Full-stack / React Native Developer with 3+ years of expertise in web and mobile applications. Built multiple projects serving 100,000+ users. Baku-based, globally available. Open to both international and local projects.",
+    title: "Ahmad Jafarov | Frontend Developer (React, React Native)",
+    description: "Frontend Developer specializing in React & React Native web and mobile apps. 3+ years experience building for 100K+ users. Based in Baku, available globally.",
   },
 };
 
