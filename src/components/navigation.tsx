@@ -65,7 +65,7 @@ export function Navigation() {
       </ul>
       <button
         onClick={toggleTheme}
-        className="flex items-center gap-2 hover:text-foreground transition-colors md:self-auto self-start px-2"
+        className="flex items-center gap-2 hover:text-foreground transition-colors md:self-auto self-start px-2 cursor-pointer"
         aria-label={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
       >
         {getThemeIcon()}
