@@ -8,13 +8,24 @@ import HackWarning from "@/components/hack-warning";
 
 export const metadata: Metadata = {
   title: "Ahmad Jafarov",
-  description: "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
-  keywords: ["frontend developer", "react native", "full-stack engineer", "typescript", "expo", "next.js", "baku", "azerbaijan"],
+  description:
+    "Full-stack Developer with 3+ years of expertise, specializing in web and mobile applications. ",
+  keywords: [
+    "frontend developer",
+    "react native",
+    "full-stack engineer",
+    "typescript",
+    "expo",
+    "next.js",
+    "baku",
+    "azerbaijan",
+  ],
   authors: [{ name: "Ahmad Jafarov" }],
   creator: "Ahmad Jafarov",
   openGraph: {
     title: "Ahmad Jafarov",
-    description: "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
+    description:
+      "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
     type: "website",
     locale: "en_US",
     siteName: "Ahmad Jafarov",
@@ -22,7 +33,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ahmad Jafarov",
-    description: "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
+    description:
+      "Full-stack / React Native Developer with 3+ years of expertise, specializing in web and mobile applications. Built projects with 100,000+ active users across fintech and business sectors. Baku-based, globally available. Open to both international and local projects.",
   },
 };
 
@@ -44,7 +56,9 @@ export default function RootLayout({
           <div className="max-w-2xl min-h-screen mx-auto px-4 py-10 md:py-20 flex flex-col gap-12">
             <HackWarning />
             <Navigation />
-            <main id="main-content" className="flex-1">{children}</main>
+            <main id="main-content" className="flex-1">
+              {children}
+            </main>
             <Footer />
           </div>
         </ThemeProvider>
