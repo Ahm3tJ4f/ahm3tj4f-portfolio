@@ -8,10 +8,9 @@ Frontend Developer specializing in React, Next.js, and React Native. Building we
 - **Role**: Frontend Developer
 - **Location**: Baku, Azerbaijan
 - **Email**: ahmadjafarov02@gmail.com
-- **Phone**: +994 77 564 6889
 - **LinkedIn**: https://www.linkedin.com/in/ahmad-jafarov-221734190/
 - **GitHub**: https://github.com/ahm3tJ4f
-- **Years of Experience**: 5+
+- **Years of Experience**: 3+
 - **Open to**: Remote work, UAE, global clients
 
 **Tech Stack**

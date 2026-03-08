@@ -7,7 +7,7 @@ Frontend Developer specializing in React, Next.js, and React Native. Building we
 ## About
 
 - **URL**: `/`
-- **Description**: Personal introduction with 5+ years experience, current role, and approach to building accessible, usable products.
+- **Description**: Personal introduction with 3+ years experience, current role, and approach to building accessible, usable products.
 
 ## Experience
 
@@ -22,7 +22,6 @@ Frontend Developer specializing in React, Next.js, and React Native. Building we
 ## Contact
 
 - **Email**: ahmadjafarov02@gmail.com
-- **Phone**: +994 77 564 6889
 - **LinkedIn**: https://www.linkedin.com/in/ahmad-jafarov-221734190/
 - **GitHub**: https://github.com/ahm3tJ4f
 - **Resume**: `/resume.pdf`
