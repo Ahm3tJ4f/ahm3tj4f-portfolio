@@ -11,24 +11,17 @@ export const experiences: ExperienceItem[] = [
     location: "Baku, Azerbaijan",
     description: [
       <>
-        Leading frontend development on internal systems (CRMs, ERP tools) and
-        public mobile applications, taking projects from architecture to delivery.
+        Built and maintained enterprise B2B platform serving 2,000+ partners for
+        contract management and factoring; integrated Asan Imza e-signature.
       </>,
       <>
-        Documented technical specifications, API integrations, and architectural
-        decisions for all frontend projects.
+        Redesigned legacy CRM serving 50+ employees across 4 departments.
       </>,
       <>
-        Conducted code reviews, established coding standards, and implemented
-        best practices for code quality.
+        Developed two React Native mobile apps with 150K+ combined users.
       </>,
       <>
-        Managed workloads and coordinated between developers, aligned with
-        backend teams for seamless integration.
-      </>,
-      <>
-        Implemented CI/CD pipelines for automated testing and deployment
-        workflows.
+        Executed CI/CD pipelines reducing deployment time by 60%.
       </>,
     ],
   },
