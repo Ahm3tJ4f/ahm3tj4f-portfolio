@@ -2,7 +2,7 @@
 
 Frontend Developer specializing in React, Next.js, and React Native. Building web and mobile apps from Baku, Azerbaijan.
 
-> Frontend Developer at Ferrum Capital building enterprise B2B platform (2,000+ partners), CRM systems (50+ employees), and mobile apps (150K+ users). Open to remote work and global opportunities.
+> Frontend Developer at Ferrum Capital building enterprise platform (2,000+ partners), CRM systems (50+ employees), and mobile apps (150K+ users). Open to remote work and global opportunities.
 
 ## About
 

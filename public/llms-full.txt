@@ -26,7 +26,7 @@ Frontend Developer specializing in React, Next.js, and React Native. Building we
 
 **Core Skills**
 
-- Enterprise B2B platform development (2,000+ partners)
+- Enterprise platform development (2,000+ partners)
 - Mobile app development with 150K+ user scale
 - CRM system design and implementation
 - Real-time features (WebSockets, video meetings)
@@ -67,7 +67,7 @@ Browser-based code notebook with live preview using esbuild-WASM. Achieved ~3ms 
 **Location**: Baku, Azerbaijan  
 **Period**: August 2023 - Present
 
-- Built enterprise B2B platform serving 2,000+ partners for contract management and factoring; integrated Asan Imza e-signature
+- Built enterprise platform serving 2,000+ partners for contract management and factoring; integrated Asan Imza e-signature
 - Redesigned legacy CRM serving 50+ employees across 4 departments
 - Developed two React Native mobile apps with 150K+ combined users
 - Executed CI/CD pipelines reducing deployment time by 60%
