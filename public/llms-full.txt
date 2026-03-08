@@ -1,80 +1,61 @@
-# Ahmad Jafarov - Full-stack / React Native Engineer
+# Ahmad Jafarov - Frontend Developer
 
-Full-stack / React Native Engineer specializing in TypeScript, React Native, Expo, and Nest.js. Building mobile apps and web systems from Baku, Azerbaijan. Open to remote work and global clients.
+Frontend Developer specializing in React, Next.js, and React Native. Building web and mobile apps from Baku, Azerbaijan. Open to remote work and global opportunities.
 
 **Contact**
 
 - **Name**: Ahmad Jafarov
-- **Role**: Lead Frontend Developer / Full-stack Engineer
+- **Role**: Frontend Developer
 - **Location**: Baku, Azerbaijan
 - **Email**: ahmadjafarov02@gmail.com
+- **Phone**: +994 77 564 6889
 - **LinkedIn**: https://www.linkedin.com/in/ahmad-jafarov-221734190/
-- **GitHub**: https://github.com/ahm3tj4f
-- **Years of Experience**: 2+
-- **Open to**: Remote work, global clients, full-time and contract opportunities
+- **GitHub**: https://github.com/ahm3tJ4f
+- **Years of Experience**: 5+
+- **Open to**: Remote work, UAE, global clients
 
 **Tech Stack**
 
-- **Frontend**: TypeScript, React Native (Expo), Next.js, React
-- **Backend**: FastAPI, Nest.js (learning), Go (learning)
-- **Mobile**: React Native, Expo Modules, Expo Router
+- **Frontend**: TypeScript, React Native (Expo), Next.js 15, React
+- **Backend**: FastAPI, Go
+- **Mobile**: React Native, Expo Modules
 - **State Management**: TanStack React Query, React Hook Form, Zod
 - **UI/Styling**: shadcn/ui, TailwindCSS, Radix UI
 - **Database**: PostgreSQL, Redis
 - **DevOps**: Docker, CI/CD pipelines
-- **Authentication**: JWT, X.509 certificates, SIMA citizen certificates
-- **Other**: WebAssembly (esbuild), Firebase Cloud Messaging, MediaPipe, WebSockets
+- **Authentication**: JWT, OAuth2, X.509 certificates, Asan Imza
 
 **Core Skills**
 
-- Mobile app development with 100,000+ user scale
-- Full-stack architecture and implementation
-- Type-safe API design with Zod validation
-- X.509 certificate parsing and RSA-SHA256 signature verification
-- Real-time features (WebSockets, video meetings, push notifications)
-- Offline-first mobile architecture
-- Accessibility and usability-focused product development
-- Team leadership and code review
-- CI/CD pipeline implementation
+- Enterprise B2B platform development (2,000+ partners)
+- Mobile app development with 150K+ user scale
+- CRM system design and implementation
+- Real-time features (WebSockets, video meetings)
+- Pixel-perfect design implementation from Figma
 
 ---
 
 ## Projects
 
-### Song Pal Bot
-
-Telegram bot enabling two users to share music and track listening habits. Features unique pairing codes, automatic link detection (Spotify/YouTube), click tracking, and scheduled reminder notifications.
-
-**Tech Stack**: FastAPI, PostgreSQL, aiogram, Docker, Alembic  
-**GitHub**: https://github.com/Ahm3tJ4f/song-pal-bot  
-**Live**: https://t.me/songpal_bot
-
-### PixelPro CRM
-
-Full-stack CRM with FastAPI backend and Next.js 15 frontend. Features citizen data integration (ASAN), Jitsi video meetings, and JWT authentication.
-
-**Tech Stack**: FastAPI, Redis, Docker, PostgreSQL, Next.js 15  
-**GitHub**: https://github.com/Ahm3tJ4f/pixelpro-crm
-
 ### Ferrum Capital Mobile
 
-Mobile factoring app with 100,000+ active users. Designed and implemented full-stack SIMA citizen certificate authentication with X.509 certificate parsing and RSA-SHA256 signature verification. Developed multi-module architecture for obligations, factoring, and video-meetings with Firebase Cloud Messaging push notifications and offline capabilities.
+Mobile factoring app with 150K+ active users. Handles factoring, obligations, and video meetings.
 
-**Tech Stack**: React Native (Expo), Expo Modules, TypeScript, TanStack React Query, React Hook Form, Zod  
+**Tech Stack**: React Native (Expo), TypeScript, TanStack React Query, Zod  
 **App Store**: https://apps.apple.com/az/app/ferrum-capital/id6741802393
 
 ### 4YOU
 
-Mental health platform with 30+ partner psychologists and 400+ active customers. Built with Server Actions as type-safe RPC and end-to-end validation with Zod schemas. Custom design system with shadcn/ui components and TailwindCSS. Implemented JWT token rotation via Edge middleware with automatic refresh on 401 responses and HTTP-only cookie-based session storage.
+Mental health platform with 30+ partner psychologists and 400+ active customers.
 
-**Tech Stack**: Next.js 15, TypeScript, Server Actions, Zod, shadcn/ui, TailwindCSS, Docker  
+**Tech Stack**: Next.js 15, TypeScript, Server Actions, Zod, shadcn/ui, TailwindCSS  
 **Live**: https://4youcare.com/
 
 ### CodeMark
 
-Jupyter-like notebook for JavaScript/React with live in-browser code execution using esbuild-WASM. Built during undergraduate studies to help friends prepare for exams. This project demonstrated the importance of building tools that genuinely help people and solidified my commitment to accessibility and usability.
+Browser-based code notebook with live preview using esbuild-WASM. Achieved ~3ms hot reload performance.
 
-**Tech Stack**: React, TypeScript, esbuild, WebAssembly  
+**Tech Stack**: React, TypeScript, esbuild, WebAssembly, Monaco Editor  
 **GitHub**: https://github.com/Ahm3tJ4f/codemark  
 **Demo**: https://ahm3tj4f.github.io/codemark/
 
@@ -82,62 +63,39 @@ Jupyter-like notebook for JavaScript/React with live in-browser code execution u
 
 ## Professional Experience
 
-### Lead Frontend Developer - Ferrum Capital
+### Frontend Developer - Ferrum Capital
 
 **Location**: Baku, Azerbaijan  
-**Period**: August 2023 - Present  
-**Website**: https://www.ferrumcapital.az
+**Period**: August 2023 - Present
 
-Leading frontend development on internal systems (CRMs, ERP tools) and public mobile applications, taking projects from architecture to delivery. Documented technical specifications, API integrations, and architectural decisions for all frontend projects. Conducted code reviews, established coding standards, and implemented best practices for code quality. Managed workloads and coordinated between developers, aligned with backend teams for seamless integration. Implemented CI/CD pipelines for automated testing and deployment workflows.
-
-**Key Achievements**:
-- Built mobile factoring app serving 100,000+ active users
-- Implemented full-stack SIMA citizen certificate authentication with X.509 certificate parsing and RSA-SHA256 signature verification
-- Developed multi-module architecture for complex business operations
-- Integrated Firebase Cloud Messaging for push notifications
-- Built offline-first capabilities for critical app features
+- Built enterprise B2B platform serving 2,000+ partners for contract management and factoring; integrated Asan Imza e-signature
+- Redesigned legacy CRM serving 50+ employees across 4 departments
+- Developed two React Native mobile apps with 150K+ combined users
+- Executed CI/CD pipelines reducing deployment time by 60%
 
 ### Software Developer - InnoSight LLC
 
 **Location**: Baku, Azerbaijan  
-**Period**: March 2024 - April 2025  
-**Website**: https://www.linkedin.com/company/innosight-llc/
+**Period**: March 2024 - April 2025
 
-Developed the frontend of an internal office room booking system with a Google Calendar-like UI and an admin panel for employee management using Next.js 14, server actions, React Hook Form, and Zod for server/client validation. Designed and implemented a CRM platform for citizen onboarding with integrated video calls and browser/backend-level face detection for identity verification. Built Swift and Kotlin SDKs for face liveness detection; implemented FastAPI backend with Google MediaPipe and authenticated WebSocket connection for real-time active liveness verification.
-
-**Key Achievements**:
-- Built room booking system with Next.js 14 and Server Actions
-- Created CRM with integrated Jitsi video meetings
-- Implemented face detection for identity verification
-- Built native SDKs for iOS and Android face liveness detection
-- Developed real-time WebSocket-based verification system with MediaPipe
+- Built office room booking system with Next.js 14, server actions, React Hook Form, and Zod
+- Designed CRM platform for citizen onboarding with video calls and face detection for identity verification
+- Built Swift and Kotlin SDKs for face liveness detection with FastAPI backend and MediaPipe
 
 ---
 
-## Philosophy & Approach
+## Education
 
-I'm obsessed with understanding how things work under the hood. Grasping the intuition behind concepts (shoutout to 3Blue1Brown) made me better at implementation. But I'm realistic—sometimes I have to trust the abstraction, otherwise I'd never ship anything.
+**Bachelor of Science in Computer Engineering** - Azerbaijan State Oil and Industry University (2019-2023)
 
-I try to build tools that genuinely help people. I remember when I was an undergraduate student, I built a website that executed React code and let users take markdown notes (Jupyter Notebook-style). Watching my friends actually use it to prepare for exams showed me technology is most meaningful when it makes someone's life easier. Experiences like that also taught me how much perspective matters: it only takes seeing one person struggling with any kind of software to understand the real-world importance of accessibility and usability. That's why I invest deeply in building products that are both usable and inclusive, ensuring people of all abilities can benefit from the tools I create.
-
----
-
-## Personal
-
-In my spare time, I'm usually hanging out with my cat, playing guitar (my neighbors definitely love it), training Brazilian Jiu-Jitsu, and adding books to my Goodreads "to-read" list to pretend I'm actually going to read them.
-
-**Links**:
-- Guitar covers on TikTok: https://www.tiktok.com/@ahm3tj4f/video/7519449555486690568
-- Goodreads profile: https://www.goodreads.com/user/show/63307480-ahmad-jafarov
-- 3Blue1Brown (math education): https://www.3blue1brown.com/
+- Graduated from Joint Collaboration Program with Siegen University (Germany)
+- GPA: 91.5/100
+- Relevant coursework: AI, Data Structures, Database Systems, Web Programming
 
 ---
 
 ## Availability
 
-**Status**: Open to remote work and global clients  
-**Preferred arrangements**: Full-time, contract, freelance  
+**Status**: Open to remote work and global opportunities  
 **Location**: Baku, Azerbaijan (remote-friendly)  
-**Timezone**: UTC+4 (AZT), flexible for global collaboration
-
-I am currently based in Baku, Azerbaijan and actively seeking remote opportunities with global clients. My experience working with distributed teams and implementing CI/CD pipelines makes me well-suited for remote collaboration. I have successfully delivered projects for clients while working remotely and am comfortable with asynchronous communication and across different time zones.
+**Timezone**: UTC+4 (AZT)

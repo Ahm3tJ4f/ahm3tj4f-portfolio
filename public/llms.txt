@@ -1,38 +1,34 @@
 # Ahmad Jafarov
 
-Full-stack / React Native Engineer specializing in TypeScript, React Native, Expo, and Nest.js. Building mobile apps and web systems from Baku, Azerbaijan.
+Frontend Developer specializing in React, Next.js, and React Native. Building web and mobile apps from Baku, Azerbaijan.
 
-> Lead Frontend Developer at Ferrum Capital building internal CRMs, ERP tools, and mobile factoring apps with 100,000+ active users. Obsessed with understanding how things work under the hood. Open to remote work and global clients.
+> Frontend Developer at Ferrum Capital building enterprise B2B platform (2,000+ partners), CRM systems (50+ employees), and mobile apps (150K+ users). Open to remote work and global opportunities.
 
 ## About
 
 - **URL**: `/`
-- **Description**: Personal introduction, approach to software development, and ASCII art wave animation. Learn about my 2+ years of experience, current role, and philosophy on building accessible, usable products.
+- **Description**: Personal introduction with 5+ years experience, current role, and approach to building accessible, usable products.
 
 ## Experience
 
 - **URL**: `/experience`
-- **Description**: Work history and professional roles. Current position as Lead Frontend Developer at Ferrum Capital (August 2023 - Present) and Software Developer at InnoSight LLC (March 2024 - April 2025). Includes responsibilities in team leadership, architecture decisions, CI/CD implementation, and full-stack development.
+- **Description**: Work history - Frontend Developer at Ferrum Capital (Aug 2023 - Present) and Software Developer at InnoSight LLC (Mar 2024 - Apr 2025).
 
 ## Projects
 
 - **URL**: `/projects`
-- **Description**: Portfolio of 5 key projects including Song Pal Bot, PixelPro CRM, Ferrum Capital Mobile, 4YOU mental health platform, and CodeMark interactive notebook.
-
-## Blog
-
-- **URL**: `/blog`
-- **Description**: Articles and thoughts on software development, engineering practices, and technology.
+- **Description**: Portfolio including Ferrum Capital Mobile (150K+ users), 4YOU mental health platform (30+ psychologists, 400+ customers), and CodeMark interactive notebook.
 
 ## Contact
 
 - **Email**: ahmadjafarov02@gmail.com
+- **Phone**: +994 77 564 6889
 - **LinkedIn**: https://www.linkedin.com/in/ahmad-jafarov-221734190/
-- **GitHub**: https://github.com/ahm3tj4f
-- **Resume**: Available for download at `/resume.pdf`
+- **GitHub**: https://github.com/ahm3tJ4f
+- **Resume**: `/resume.pdf`
 
 ## Tech Stack
 
-**Primary**: TypeScript, React Native, Expo, Next.js, FastAPI  
-**Secondary**: Nest.js (learning), Go (learning)  
-**Tools**: PostgreSQL, Redis, Docker, Zod, TanStack Query, React Hook Form, shadcn/ui, TailwindCSS
+**Primary**: TypeScript, React Native, Next.js, React, FastAPI  
+**Secondary**: Go, Node.js  
+**Tools**: Docker, Zod, TanStack Query, React Hook Form, shadcn/ui, TailwindCSS
