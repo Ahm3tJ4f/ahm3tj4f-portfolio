@@ -47,6 +47,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script src="https://app.inlyne.ai/scripts/preview.js" async></script>
+      </head>
       <body className="antialiased bg-background text-foreground">
         <ThemeProvider>
           <a
