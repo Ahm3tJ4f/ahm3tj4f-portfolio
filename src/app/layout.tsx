@@ -1,10 +1,30 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/react";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/context/theme-context";
 import "@/styles/globals.css";
 import HackWarning from "@/components/hack-warning";
+
+// next/font handles preloading + a size-adjusted fallback so the
+// custom font loads before first paint (no FOUT/flash on load).
+const inter = localFont({
+  src: [
+    {
+      path: "../fonts/Inter/Inter-VariableFont_opsz,wght.ttf",
+      weight: "100 900",
+      style: "normal",
+    },
+    {
+      path: "../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf",
+      weight: "100 900",
+      style: "italic",
+    },
+  ],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Ahmad Jafarov | Frontend Developer (React, React Native)",
@@ -46,12 +66,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={inter.variable}>
       <head>
         <script src="https://app.inlyne.ai/scripts/preview.js" async></script>
       </head>
       <body className="antialiased bg-background text-foreground">
-        <ThemeProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <a
             href="#main-content"
             className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-brand-orange focus:text-white focus:rounded-md focus:font-medium"

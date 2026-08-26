@@ -1,27 +1,10 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@font-face {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("/fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Inter";
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
-    format("truetype");
-}
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: "Inter", sans-serif;
+  --font-sans: var(--font-inter, "Inter", sans-serif);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);

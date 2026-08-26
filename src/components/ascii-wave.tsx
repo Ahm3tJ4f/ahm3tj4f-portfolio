@@ -21,7 +21,9 @@ const range = (min: number, max: number) => min + random() * (max - min);
 const lightColors = [...BASE_CONFIG.colors].sort(() => random() - 0.5);
 
 // Dark mode colors - brighter, more visible on dark background
-const darkColors = ["#888888", "#aaaaaa", "#cccccc", "#ffffff"].sort(() => random() - 0.5);
+const darkColors = ["#888888", "#aaaaaa", "#cccccc", "#ffffff"].sort(
+  () => random() - 0.5,
+);
 
 const config = {
   ...BASE_CONFIG,
@@ -52,8 +54,6 @@ export function AsciiWave() {
 
     let frameId: number;
     let time = 0;
-    
-    // Select colors based on theme
     const currentColors = resolvedTheme === "dark" ? darkColors : config.colors;
 
     const resize = () => {
@@ -125,7 +125,7 @@ export function AsciiWave() {
             }
 
             const colorIndex = Math.floor(
-              ((xNorm + yNorm + norm) * colorCycleRate) % currentColors.length
+              ((xNorm + yNorm + norm) * colorCycleRate) % currentColors.length,
             );
 
             ctx.fillStyle = currentColors[colorIndex];
@@ -136,7 +136,7 @@ export function AsciiWave() {
           if (norm > threshold) {
             const charIndex = Math.floor(norm * (chars.length - 1));
             const colorIndex = Math.floor(
-              ((xNorm + yNorm + norm) * colorCycleRate) % currentColors.length
+              ((xNorm + yNorm + norm) * colorCycleRate) % currentColors.length,
             );
 
             ctx.fillStyle = currentColors[colorIndex];
@@ -159,5 +159,12 @@ export function AsciiWave() {
     };
   }, [resolvedTheme]);
 
-  return <canvas ref={canvasRef} className="block" role="img" aria-label="Animated ASCII wave showing colorful character patterns" />;
+  return (
+    <canvas
+      ref={canvasRef}
+      className="block"
+      role="img"
+      aria-label="Animated ASCII wave showing colorful character patterns"
+    />
+  );
 }

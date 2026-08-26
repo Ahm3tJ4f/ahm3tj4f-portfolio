@@ -5,11 +5,13 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { routes } from "@/data/navigation";
 import { useTheme } from "@/context/theme-context";
+import { useMounted } from "@/hooks/use-mounted";
 import { Moon, Sun } from "lucide-react";
 
 export function Navigation() {
   const pathname = usePathname();
   const { theme, setTheme, resolvedTheme } = useTheme();
+  const mounted = useMounted();
 
   const toggleTheme = () => {
     if (theme === "system") {
@@ -68,8 +70,17 @@ export function Navigation() {
         className="flex items-center gap-2 hover:text-foreground transition-colors md:self-auto self-start px-2 cursor-pointer"
         aria-label={`Switch to ${resolvedTheme === "dark" ? "light" : "dark"} mode`}
       >
-        {getThemeIcon()}
-        <span className="">{getThemeLabel()}</span>
+        {mounted ? (
+          <>
+            {getThemeIcon()}
+            <span className="">{getThemeLabel()}</span>
+          </>
+        ) : (
+          <>
+            <Sun className="w-4 h-4" />
+            <span className="">Light</span>
+          </>
+        )}
       </button>
     </nav>
   );
